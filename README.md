@@ -22,7 +22,7 @@ Rood
 
 #### Je focus:
 
-hier je focus (kies uit responsive óf surface plane)
+Responsive
 
 </details>
 
@@ -33,17 +33,17 @@ hier je focus (kies uit responsive óf surface plane)
 
 ### Je opdracht:
 
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+https://www.spa.nl/
 
 #### Screenshot(s) van de eerste pagina (small screen):
 
 hier de naam van de pagina  
- <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+ <img src="readme-images/home.png" width="375px" alt="home pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 
 hier de naam van de pagina  
- <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+ <img src="readme-images/inspiratie.png" width="375px" alt="tips & inspiratie pagina">
 
 </details>
 
