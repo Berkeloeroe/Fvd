@@ -38,11 +38,13 @@ https://www.spa.nl/
 #### Screenshot(s) van de eerste pagina (small screen):
 
 Home pagina
+
 <img src="readme-images/home.png" width="375px" alt="home pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 
 Tips & Inspiratie pagina
+
 <img src="readme-images/inspiratie.png" width="375px" alt="tips & inspiratie pagina">
 
 </details>
