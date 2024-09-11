@@ -13,7 +13,7 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:black;
+	--color-text:#263746;
 	--color-background:white;
 }
 
@@ -27,6 +27,10 @@ section {
   padding-top: 5%;
 }
 
+h1, h2, h3 {
+  color:var(--color-text)
+}
+
 img {
-  max-width: 200px;
+  max-width: 300px;
 }
