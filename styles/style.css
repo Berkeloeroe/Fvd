@@ -23,5 +23,10 @@
 
 /* jouw code */
 section {
+  /* text-align: center; */
   padding-top: 5%;
+}
+
+img {
+  max-width: 200px;
 }
