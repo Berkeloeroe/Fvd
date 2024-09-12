@@ -58,6 +58,10 @@ Tips & Inspiratie pagina
 
 Lijst met je bevindingen die in de test naar voren kwamen:
 
+De website van Spa is goed toegankelijk. Bijna alles heb ik kunnen afvinken met de WCAG checklist.
+
+De overige dingen die niet goed waren ga ik zelf verbeteren.
+
 </details>
 
 ## Breakdownschets (week 1)
@@ -67,15 +71,15 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 
 ### de hele pagina:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/downbreak.png" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu):
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/dynamisch.png" width="375px" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter):
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <!-- <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel"> -->
 
 </details>
 
@@ -87,6 +91,12 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 ### Stand van zaken
 
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+Alle html op de pagina zetten ging goed daar was niet zo veel aan.
+
+De css daar in tegen is wel tricky. Ik ben nu nog bezig met de header wat al redelijk gaat met behulp van de oefen opdrachten en chatgpt.
+<img src="readme-images/eerste html.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="readme-images/html.png" width="375px" alt="breakdown van een dynamisch deel">
 
 ### Agenda voor meeting
 
