@@ -3,29 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="jouw naam" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />w
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Howdy FED2425</title>
     <link href="styles/style.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
   </head>
   <body>
     <header>
-      <a href="https://www.example.com">
-        <img src="logo.png" alt="spa-logo" />
+      <!-- het logo -->
+      <a href="#">
+        <img src="https://assets.codepen.io/274456/ft-icon-fairytale.svg" alt="go home"/>Fairy tales
       </a>
+      
+      <!-- het menu -->
       <nav>
+        <!-- de button is niet relevant voor screenreaders -->
+        <!-- met aria-hidden="true" 'verstop' je de button voor ze -->
+
+        <!-- <button aria-hidden="true"> -->
+          <button id="menu-toggle" aria-expanded="false">
+          <img src="images/Hamburger_icon.svg.png" alt="" />Menu
+        </button>
+        
         <ul>
-          <li><a href="index.html">Producten</a></li>
-          <li><a href="">Beter drinken.Beter leven</a></li>
-          <li><a href="">Duurzaamheid</a></li>
-          <li><a href="">SPA Baby & Family Club</a></li>
-          <li><a href="">Inspiratie & Tips</a></li>
-          <a href="">Koop hier</a>
+          <li><a class="active"><img src="https://assets.codepen.io/274456/ft-icon-castle.svg" alt="home"> Home</a></li>
+          <li><a href="#"><img src="https://assets.codepen.io/274456/ft-icon-knight.svg" alt="knight"> Knight</a></li>
+          <li><a href="#"><img src="https://assets.codepen.io/274456/ft-icon-ogre.svg" alt="ogre"> Ogre</a></li>
+          <li><a href="#"><img src="https://assets.codepen.io/274456/ft-icon-queen.svg" alt="queen"> Queen</a></li>
+          <li><a href="#"><img src="https://assets.codepen.io/274456/ft-icon-witch.svg" alt="witch"> Witch</a></li>
+          <li><a href="#"><img src="https://assets.codepen.io/274456/ft-icon-wizard.svg" alt="wizard"> Wizard</a></li>
         </ul>
       </nav>
+      
     </header>
+    
     <section>
-      <!-- <video src="https://youtu.be/9ImYauosjJo?t=3"></video> -->
+      <video src="https://youtu.be/9ImYauosjJo?t=3"></video>
       <h1>Blijf puur. Blijf SPA®.</h1>
        <button>Bekijk de video</button>
       <p>
