@@ -176,9 +176,10 @@ nav button img {
 }
 
 /* als menu open is */
-nav.toonMenu button img {
+nav.toonMenu button img a{
   /* url kruisje: https://assets.codepen.io/274456/ui-icon-cross.svg */
   content:url("https://assets.codepen.io/274456/ui-icon-cross.svg");
+
 }
 
 
@@ -195,14 +196,17 @@ nav ul {
   align-items: flex-start; /* Links uitlijnen */
   gap:1em;
   
-  background:var(--menu-gradient);
+  background:var(--general-background);
   
   /* Begin buiten beeld bovenaan */
   position:fixed;
   inset:0;
-  translate: 0 -100%; /* Verberg het menu bovenaan */
+
+/* Verberg het menu bovenaan */
+  translate: 0 -100%; 
   
-  transition: 1s; /* Voor een vloeiende animatie */
+  /* Voor een vloeiende animatie */
+  /* transition: 1s;  */
 }
 
 /* als menu open is */
@@ -223,8 +227,9 @@ nav a {
   align-items:center;
   column-gap:.25em;
   
-  border:solid 1px var(--menu-border);
+  /* border:solid 1px var(--menu-border); */
   width:100%; /* Zorgt ervoor dat de link de volledige breedte van het menu gebruikt */
+  
 }
 
 nav a img {
