@@ -16,7 +16,7 @@ button:not(disabled) {
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-  --general-color:#012;
+  --general-color:#263746;
   --general-background:#fff;
   
   --header-gradient:linear-gradient(#f8a, #fbd);
@@ -24,7 +24,7 @@ button:not(disabled) {
   --menu-gradient:linear-gradient(#8af, #bdf);
   --menu-border:#46f;
   
-  --button-color:#fff;
+  --button-color:#263746ff;
   --button-background:#f46;
   
   --title-gradient:linear-gradient(#f46 40%, #f8a 80%);
@@ -64,7 +64,7 @@ footer {
 }
 
 h1, h2, h3 {
-  color:var(--color-text);
+  color:var(--general-color);
   font-size: 2.125rem;
 }
 
@@ -80,9 +80,10 @@ img {
 /* DE HEADER */
 /*************/
 header {
-  min-height:4em;
+  min-height:5.5em;
   padding:0 1em;
-  background-image:var(--header-gradient);
+  /* background-image:var(--header-gradient); */
+  background-color: var(--general-background);
   line-height:1;
   
   /* Flexbox voor lay-out */
