@@ -89,6 +89,14 @@ img {
   max-width: 300px;
 }
 
+img:nth-of-type(4) {
+  /* Jouw stijlen hier */
+  /* border: 2px solid red;
+  width: 200px; */
+}
+
+
+
 /*************/
 /* DE HEADER */
 /*************/
@@ -172,7 +180,7 @@ nav button {
   
   /* standaard styling aanpassen */
   appearance:none;
-  background-color:var(--button-background);
+  background-color: transparent;
   border:none;
   border-radius:.25em; 
   font:inherit;
@@ -184,7 +192,7 @@ nav button {
 }
 
 nav button img {
-  height:1em;
+  height:2em;
 }
 
 /* als menu open is */
