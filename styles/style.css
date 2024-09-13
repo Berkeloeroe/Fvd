@@ -54,9 +54,22 @@ section {
   text-align: center;
   padding: 10% 3% 0 3%;}
 
+  section:nth-of-type(2) {
+    /* Jouw stijlen hier */
+    text-align: left;
+}
   section:nth-of-type(3) {
     /* Jouw stijlen hier */
     text-align: left;
+}
+
+figure {
+  /* display: flex; */
+  justify-content: center; /* Horizontaal centreren */
+  align-items: center;     /* Verticaal centreren */
+  flex-direction: column;  /* Stapelt items verticaal (voor figcaption en img) */
+  height: 100%;            /* Als je wilt dat de figuur de volledige hoogte krijgt */
+  text-align: center;      /* Zorgt ervoor dat tekst gecentreerd is */
 }
 
 footer {
@@ -82,7 +95,6 @@ img {
 header {
   min-height:5.5em;
   padding:0 1em;
-  /* background-image:var(--header-gradient); */
   background-color: var(--general-background);
   line-height:1;
   
@@ -293,7 +305,7 @@ nav a.active {
 /* CONTENT */
 /***********/
 
-main h1,
+/* main h1,
 main p {
   max-width:40rem;
   margin:0 auto;
@@ -311,4 +323,30 @@ main h1 {
 
 main p {
   padding:0 2.5vw 2.5vw;
+} */
+
+.hero {
+  position: relative;
+  height: 80vh; /* Volledige hoogte van het venster */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
 }
