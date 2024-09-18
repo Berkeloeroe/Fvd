@@ -71,6 +71,9 @@ figure {
   flex-direction: column;  /* Stapelt items verticaal (voor figcaption en img) */
   height: 100%;            /* Als je wilt dat de figuur de volledige hoogte krijgt */
   text-align: center;      /* Zorgt ervoor dat tekst gecentreerd is */
+    font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-style: normal;
 }
 
 footer {
