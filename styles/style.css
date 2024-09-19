@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
 
+@font-face {
+  font-family: 'Recoleta';
+  src: url('/fonts/Recoleta-RegularDEMO.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 /* scroll naar beneden om de uitwerking te bekijken */
 
 /* Simpele CSS Remedy */
@@ -71,9 +79,9 @@ figure {
   flex-direction: column;  /* Stapelt items verticaal (voor figcaption en img) */
   height: 100%;            /* Als je wilt dat de figuur de volledige hoogte krijgt */
   text-align: center;      /* Zorgt ervoor dat tekst gecentreerd is */
-    font-family: "Poppins", sans-serif;
-      font-weight: 500;
-      font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 footer {
@@ -83,11 +91,15 @@ footer {
 h2, h3 {
   color:var(--general-color);
   font-size: 2.125rem;
+  font-family: 'Recoleta', sans-serif;
+
 }
 
 h1 {
   color: white;
   font-size: 2.125rem;
+  font-family: 'Recoleta', sans-serif;
+
 }
 
 p {
@@ -314,40 +326,15 @@ nav a.active {
   }
 }
 
-
-/***********/
-/* CONTENT */
-/***********/
-
-/* main h1,
-main p {
-  max-width:40rem;
-  margin:0 auto;
-  line-height:1.75;
-}
-
-main h1 {
-  padding:5vw 2.5vw 0;
-  
-  background-image:var(--title-gradient);
-  -webkit-background-clip:text;
-  background-clip:text;
-  color:transparent;
-}
-
-main p {
-  padding:0 2.5vw 2.5vw;
-} */
-
 .hero {
   position: relative;
   height: 80vh; /* Volledige hoogte van het venster */
   overflow: hidden;
   
-    border-radius: 0 0 25px 25px;
-    border-left: 15px solid white;
-    border-right: 15px solid white;
-    border-bottom: 15px solid white;
+  border-radius: 0 0 25px 25px;
+  border-left: 15px solid white;    
+  border-right: 15px solid white;
+  border-bottom: 15px solid white;
 }
 
 .background-video {
@@ -362,10 +349,24 @@ main p {
 }
 
 .hero-content {
+  display: flex;
+  flex-direction: column;
   position: relative;
   z-index: 1;
   text-align: center;
   color: white;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.hero-content h1 {
+  order: 1; /* Houd het h1 element op de eerste plek */
+}
+
+.hero-content p {
+  order: 3; /* Verplaats het p element naar de derde plek */
+}
+
+.hero-content .cta-button {
+  order: 2; /* Verplaats de a (cta-button) naar de tweede plek */
 }
