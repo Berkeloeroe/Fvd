@@ -35,7 +35,7 @@ button:not(disabled) {
   --menu-border:#46f;
   
   --button-color:#263746ff;
-  --button-background:#f46;
+  --button-background:#263746;
   
   --title-gradient:linear-gradient(#f46 40%, #f8a 80%);
 }
@@ -56,10 +56,16 @@ body {
 /* styling voor de small-screen versie van de website */
 /******************************************************/
 /* jouw code */
+a[aria-current="page"] {
+  font-weight: bold;
+  color: #0671CE;
+}
+
 section {
   display: flex;
   align-items: center;
   flex-direction: column;
+
   text-align: center;
   padding: 10% 3% 0 3%;}
 
@@ -124,212 +130,216 @@ img {
 /* DE HEADER */
 /*************/
 header {
-  min-height:5.5em;
-  padding:0 1em;
-  background-color: var(--general-background);
-  line-height:1;
-  
-  /* Flexbox voor lay-out */
-  display:flex;
+  min-height: 4em;
+  height: 88px;
+  padding: 0 3%;
+  background-color: white;
+  line-height: 1;
+
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  /* Positie vastzetten bij scrollen */
-  position:sticky;
-  top:0;
-  z-index: 100000000;
+
+  position: sticky;
+  top: 0;
+  z-index: 10000000000;
 }
 
-/* alle links in de header */
+/* Voor kleine schermen */
+@media (max-width: 38em) {
+  header {
+    justify-content: space-between;
+  }
+
+  /* Logo aan de linkerkant */
+  header>a:first-of-type {
+    margin-right: auto;
+    /* Zorgt ervoor dat het logo helemaal links staat */
+  }
+
+  /* Koop hier link helemaal rechts */
+  header>a:last-of-type {
+    order: 1;
+    /* Zet de "Koop hier" link rechts */
+    margin-right: 1em;
+  }
+
+  /* Hamburger menu direct rechts van de "Koop hier" link */
+  nav {
+    order: 2;
+    /* Zet de hamburger menu knop rechts van de "Koop hier" link */
+  }
+}
+
 header a {
-  padding:.5em 0;
-  color:var(--general-color);
-  text-decoration:none;
+  padding: .5em 0;
+  color: var(--general-color);
+  text-decoration: none;
 }
-
 
 /********/
 /* LOGO */
 /********/
-header > a:first-of-type {
-  /* om het boek en de titel te positioneren */
-  display:grid;
-  grid-template-columns:min-content min-content;
-  grid-gap:.25em;
-  align-items:center;
-  
-  font-weight:bold; 
+header>a:first-of-type {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-gap: .25em;
+  align-items: center;
+  font-weight: bold;
 }
 
-header > a:first-of-type img {
-  height:3em;
+header>a:first-of-type img {
+  height: 3em;
+  z-index: 100001;
+  /* Zorgt ervoor dat het logo boven het menu staat */
 }
-
 
 /**********/
 /* FAVO's */
 /**********/
-header > a:last-of-type {
-  /* icon en tekst met gap-je naast elkaar */
-  display:flex;
-  align-items:center;
-  column-gap:.25em;
+header>a:last-of-type {
+  display: flex;
+  align-items: center;
+  column-gap: .25em;
 }
 
-/* link icon */
-header > a:last-of-type img {
-  width:auto;
-  height:2em;
+header>a:last-of-type img {
+  width: auto;
+  height: 2em;
 }
-
 
 /************/
 /* HET MENU */
 /************/
-/* nav {
-  order: -1;
-} */
-
 
 /***************/
 /* MENU BUTTON */
 /***************/
 nav button {
-  padding:.5em;
-  
-  /* icon en tekst met gap-je naast elkaar */
-  display:flex;
-  align-items:center;
-  gap:.25em;
-  
-  /* standaard styling aanpassen */
-  appearance:none;
-  background-color: transparent;
-  border:none;
-  border-radius:.25em; 
-  font:inherit;
-  text-align:center;
-  color:var(--button-color);
-  
-  position:relative;
-  z-index:100000;
+  padding: .5em;
+  display: flex;
+  align-items: center;
+  gap: .25em;
+  appearance: none;
+  background-color: var(--button-background);
+  border: none;
+  border-radius: .25em;
+  font: inherit;
+  text-align: center;
+  color: var(--button-color);
+  position: relative;
+  z-index: 100002;
+  /* Zorgt ervoor dat de hamburger button altijd boven het menu staat */
 }
 
 nav button img {
-  height:2em;
+  height: 1em;
 }
 
-/* als menu open is */
-nav.toonMenu button img a{
-  /* url kruisje: https://assets.codepen.io/274456/ui-icon-cross.svg */
-  content:url("https://assets.codepen.io/274456/ui-icon-cross.svg");
-
+nav.toonMenu button img {
+  content: url("https://assets.codepen.io/274456/ui-icon-cross.svg")
 }
-
 
 /*******************/
 /* LIJST MET LINKS */
 /*******************/
-nav ul { 
-  margin:0; 
-  padding:2em 1em; /* Verandering van padding om ruimte toe te voegen */
-  list-style:none;
-  
-  display:flex;
-  flex-direction:column; /* Items onder elkaar */
-  align-items: flex-start; /* Links uitlijnen */
-  gap:1em;
-  
-  background:var(--general-background);
-  /* background-color: red; */
-  
-  /* Begin buiten beeld bovenaan */
-  position:fixed;
-  inset:0;
-
-/* Verberg het menu bovenaan */
-  translate: 0 -100%; 
-  
-  /* Voor een vloeiende animatie */
-  /* transition: 1s;  */
+nav ul {
+  margin: 0;
+  padding: 6em 1em 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: start;
+  background: white;
+  position: fixed;
+  inset: 0;
+  translate: -100%;
+  z-index: 100000;
+  /* Het menu blijft onder de button en logo */
 }
 
-/* als menu open is */
 nav.toonMenu ul {
-  translate: 0 0; /* Schuif naar beneden */
+  translate: 0%;
 }
 
 nav li {
-  /* flex-basis:100%;  */
+  /* flex-basis: 9em;
+  flex-grow: 1; */
 }
 
 /************************/
 /* EEN LINK IN DE LIJST */
 /************************/
 nav a {
-  /* icon en tekst met gap-je naast elkaar */
-  display:flex;
-  align-items:center;
-  column-gap:.25em;
-  
-  /* border:solid 1px var(--menu-border); */
-  width:100%; /* Zorgt ervoor dat de link de volledige breedte van het menu gebruikt */
-  
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  white-space: nowrap;
+  height: 4em;
+  font-size: 1.25em;
+  font-family: 'Recoleta', sans-serif;
+  /* Zorgt ervoor dat de links niet afbreken */
 }
 
 nav a img {
-  width:auto;
-  height:2em;
+  width: auto;
+  height: 2em;
 }
 
 nav a.active {
-  font-weight:bold;
+  font-weight: bold;
 }
-
 
 /****************************************************************/
 /* styling voor de header als de browser minimaal 38em breed is */
 /****************************************************************/
-@media (min-width:38em) {
+@media (min-width: 38em) {
   nav {
-    order:0;
+    order: 0;
   }
-  
+
   nav button {
-    display:none;
+    display: none;
   }
-  
+
   nav ul {
-    position:static;
-    translate:none;
+    position: static;
+    translate: none;
     background: none;
-    padding:0;
-    flex-direction:row; /* Lijn items horizontaal uit */
-    align-items: center;
+    padding: 0;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1em;
+    /* Centreer de navigatie-items */
   }
-  
+
   nav li {
-    flex-basis:auto; /* Zorgt ervoor dat items hun inhoud omarmen */
+    flex-basis: auto;
+    /* flex-grow: 0; */
   }
-  
+
   nav a {
-    flex-direction:row; /* Zet items horizontaal uit */
-    border: none;
+    /* padding: 0.5em 1em; */
+    text-align: center;
+    white-space: nowrap;
+    font-size: 16px;
+    /* Voorkom afbreken van tekst */
   }
-  
-  header > a:last-of-type {
-    flex-direction:row; /* Zet items horizontaal uit */
+
+  header>a:last-of-type {
+    flex-direction: column;
   }
 }
-
 
 /****************************************************************/
 /* styling voor de header als de browser minimaal 57em breed is */
 /****************************************************************/
-@media (min-width:54em) {
-  header > a:last-of-type,
+@media (min-width: 54em) {
+
+  header>a:last-of-type,
   nav a {
-    flex-direction:row; /* Zet items horizontaal uit */
+    flex-direction: row;
   }
 }
 
