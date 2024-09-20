@@ -111,9 +111,14 @@ p {
   line-height: 2.142857142857143;
 }
 
+a[aria-current="page"] {
+  font-weight: bold;
+}
+
 img {
   max-width: 300px;
 }
+
 
 /*************/
 /* DE HEADER */
@@ -255,7 +260,7 @@ nav.toonMenu ul {
 }
 
 nav li {
-  flex-basis:100%; /* Zorgt ervoor dat elk item de volledige breedte van het menu gebruikt */
+  /* flex-basis:100%;  */
 }
 
 /************************/
