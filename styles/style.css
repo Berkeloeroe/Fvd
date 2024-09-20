@@ -92,6 +92,7 @@ h2, h3 {
   color:var(--general-color);
   font-size: 2.125rem;
   font-family: 'Recoleta', sans-serif;
+  margin: 0;
 
 }
 
