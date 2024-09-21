@@ -125,6 +125,8 @@ section:nth-of-type(3) a {
 section:nth-of-type(7) {
   color: var(--general-background);
   background-image: url(../images/newsletter-mob.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 25px;
   border-left: 15px solid white;
   border-right: 15px solid white;
