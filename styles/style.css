@@ -84,6 +84,11 @@ p {
   text-align: left;
 }
 
+/* samenstelling button */
+section a {
+  
+}
+
 section {
   display: flex;
   align-items: center;
@@ -99,6 +104,17 @@ section:nth-of-type(2) {
 
 section:nth-of-type(3) {
   text-align: left;
+}
+
+section:nth-of-type(3) a {
+  border-radius: 30px;
+  /* font-family: "Poppins", sans-serif; */
+  border: 2px solid #fff;
+  color: white;
+  line-height: 38px;
+  padding-left: 3em;
+  padding-right: 3em;
+  background-color: var(--button-background);
 }
 
 section:nth-of-type(7) {
