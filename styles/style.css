@@ -115,6 +115,9 @@ section:nth-of-type(3) a {
   padding-left: 3em;
   padding-right: 3em;
   background-color: var(--button-background);
+  
+  -webkit-text-decoration: none;
+    /* Verwijder onderlijning voor Safari */
 }
 
 section:nth-of-type(7) {
