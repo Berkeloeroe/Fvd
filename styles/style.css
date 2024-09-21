@@ -74,6 +74,16 @@ section:nth-of-type(3) {
 section:nth-of-type(7) {
   color: var(--general-background);
   background-image: url(../images/newsletter-mob.jpg);
+  border-radius: 25px;
+  border-left: 15px solid white;
+  border-right: 15px solid white;
+  border-bottom: 15px solid white;
+
+  height: 60vh;
+}
+
+section:nth-of-type(7) h2 {
+  color: var(--general-background);
 }
 
 figure {
@@ -104,7 +114,7 @@ h2 {
   font-size: 2.125rem;
   font-family: 'Recoleta', sans-serif;
   margin: 0;
-
+  text-align: left;
 }
 
 h3 {
@@ -120,6 +130,7 @@ p {
   font-weight: 500;
   font-style: normal;
   line-height: 2.142857142857143;
+  text-align: left;
 }
 
 a[aria-current="page"] {
