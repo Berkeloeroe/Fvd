@@ -6,13 +6,7 @@
   font-weight: normal;
   font-style: normal;
 }
-
-            
-/* scroll naar beneden om de uitwerking te bekijken */
-
-/* Simpele CSS Remedy */
-/* naar een idee van Jen Simmons */
-/* https://github.com/jensimmons/cssremedy */
+    
 *, *::after, *::before {
   box-sizing:border-box;  
 }
@@ -20,7 +14,6 @@
 button:not(disabled) {
   cursor:pointer;
 }
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -67,15 +60,20 @@ section {
   flex-direction: column;
 
   text-align: center;
-  padding: 10% 3% 0 3%;}
-
-  section:nth-of-type(2) {
-    /* Jouw stijlen hier */
-    text-align: left;
+  padding: 10% 3% 0 3%;
 }
-  section:nth-of-type(3) {
-    /* Jouw stijlen hier */
-    text-align: left;
+
+section:nth-of-type(2) {
+  text-align: left;
+}
+
+section:nth-of-type(3) {
+  text-align: left;
+}
+
+section:nth-of-type(7) {
+  color: var(--general-background);
+  background-image: url(../images/newsletter-mob.jpg);
 }
 
 figure {
@@ -92,9 +90,16 @@ figure {
 
 footer {
   padding-top: 10%;
+  background-color: var(--general-color);
 }
 
-h2, h3 {
+h1 {
+  color: white;
+  font-size: 2.125rem;
+  font-family: 'Recoleta', sans-serif;
+}
+
+h2 {
   color:var(--general-color);
   font-size: 2.125rem;
   font-family: 'Recoleta', sans-serif;
@@ -102,11 +107,11 @@ h2, h3 {
 
 }
 
-h1 {
-  color: white;
-  font-size: 2.125rem;
+h3 {
+  color: var(--general-background);
+  font-size: 0.8em;
   font-family: 'Recoleta', sans-serif;
-
+  margin: 0;
 }
 
 p {
@@ -343,13 +348,19 @@ nav a.active {
   }
 }
 
+
+
+/****************************************************************/
+/* hero sectie */
+/****************************************************************/
 .hero {
   position: relative;
-  height: 80vh; /* Volledige hoogte van het venster */
+  height: 80vh;
+  /* Volledige hoogte van het venster */
   overflow: hidden;
-  
+
   border-radius: 0 0 25px 25px;
-  border-left: 15px solid white;    
+  border-left: 15px solid white;
   border-right: 15px solid white;
   border-bottom: 15px solid white;
 }
@@ -377,13 +388,16 @@ nav a.active {
 }
 
 .hero-content h1 {
-  order: 1; /* Houd het h1 element op de eerste plek */
+  order: 1;
+  /* Houd het h1 element op de eerste plek */
 }
 
 .hero-content p {
-  order: 3; /* Verplaats het p element naar de derde plek */
+  order: 3;
+  /* Verplaats het p element naar de derde plek */
 }
 
 .hero-content .cta-button {
-  order: 2; /* Verplaats de a (cta-button) naar de tweede plek */
+  order: 2;
+  /* Verplaats de a (cta-button) naar de tweede plek */
 }
