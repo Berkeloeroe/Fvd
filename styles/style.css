@@ -310,7 +310,7 @@ nav button {
   align-items: center;
   gap: .25em;
   appearance: none;
-  background-color: var(--button-background);
+  /* background-color: var(--button-background); */
   border: none;
   border-radius: .25em;
   font: inherit;
@@ -325,8 +325,13 @@ nav button img {
   height: 1em;
 }
 
+nav.toonMenu button {
+  content: url("https://assets.codepen.io/274456/ui-icon-cross.svg");
+  background-color: var(--button-background);
+}
+
 nav.toonMenu button img {
-  content: url("https://assets.codepen.io/274456/ui-icon-cross.svg")
+  content: url("https://assets.codepen.io/274456/ui-icon-cross.svg");
 }
 
 /*******************/
