@@ -405,7 +405,7 @@ nav a.active {
 /****************************************************************/
 .hero {
   position: relative;
-  height: 80vh;
+  height: 90vh;
   /* Volledige hoogte van het venster */
   overflow: hidden;
 
