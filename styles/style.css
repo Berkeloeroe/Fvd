@@ -454,9 +454,15 @@ nav a.active {
   border-bottom: 15px solid white;
 }
 
-.hero p{
+.hero p {
   text-align: center;
+  color: var(--general-background);
 }
+
+.hero a {
+  color: var(--general-background);
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;}
 
 .background-video {
   position: absolute;
