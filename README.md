@@ -102,17 +102,17 @@ De css daar in tegen is wel tricky. Ik ben nu nog bezig met de header wat al red
 
 samen met je groepje opstellen
 
-| Randi          | Joep               |  Nienke      | Lois        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| Mijn html code | Grid                | Hamburger menu | Fonts & bg video downloaden         |
+| Randi          | Joep               | Nienke         | Lois                        |
+| -------------- | ------------------ | -------------- | --------------------------- |
+| dit bespreken  | en dit             | en ik dit      | en dan ik dat               |
+| en dat ook nog | dit als er tijd is | nog een punt   | dit wil ik zeker            |
+| Mijn html code | Grid               | Hamburger menu | Fonts & bg video downloaden |
 
 ### Verslag van meeting
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
+- punt 1: ik heb door Chatgpt paar foutjes gemaakt
 - punt 2
 - nog een punt
 - ...
@@ -132,20 +132,22 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Randi          | Joep               | lois         | student 4        |
 | -------------- | ------------------ | ------------ | ---------------- |
 | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Font family    | gradient op tekst  |
+
+                   | ...en foto          | ...              |
 
 ### Verslag van meeting
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- punt 1: Font family probleem opgelost
+- punt 2: Ik moet de header prioriteit geven
+- punt 3: beginnen aan de footer
+- punt 4: html zag er wel goed uit
 
 </details>
 

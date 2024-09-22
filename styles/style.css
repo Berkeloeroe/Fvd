@@ -106,7 +106,7 @@ section:nth-of-type(3) {
 section:nth-of-type(3) a {
   border-radius: 30px;
   /* font-family: "Poppins", sans-serif; */
-  border: 2px solid #fff;
+  /* border: 2px solid #fff;
   color: white;
   line-height: 38px;
   padding-left: 3em;
@@ -114,7 +114,7 @@ section:nth-of-type(3) a {
   padding-right: 3em;
   background-color: var(--button-background);
 
-  -webkit-text-decoration: none;
+  -webkit-text-decoration: none; */
     /* Verwijder onderlijning voor Safari */
 }
 
@@ -243,7 +243,7 @@ header>a:last-of-type {
   font-family: "Poppins", sans-serif;
   text-align: center;
     
-  border: 2px solid #fff;
+  /* border: 2px solid #fff;
   color: white;
   line-height: 25px;
   padding-left: 3em;
@@ -251,7 +251,7 @@ header>a:last-of-type {
   padding-right: 3em;
   background-color: var(--button-background);
   
-    -webkit-text-decoration: none;
+    -webkit-text-decoration: none; */
     /* Verwijder onderlijning voor Safari */
 }
 
