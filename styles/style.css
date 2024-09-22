@@ -259,9 +259,9 @@ header>a:last-of-type {
   /* Horizontaal centreren */
   align-items: center;
   /* Verticaal centreren */
-  width: 50px;
+  width: 40px;
   /* Zorg dat de breedte gelijk is aan de hoogte voor een cirkel */
-  height: 50px;
+  height: 40px;
   /* Pas deze waarde aan om de grootte van de cirkel te bepalen */
   border-radius: 50%;
   /* Maak het element rond */
