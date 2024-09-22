@@ -114,8 +114,7 @@ section:nth-of-type(3) a {
   padding-right: 3em;
   background-color: var(--button-background);
 
-  -webkit-text-decoration: none;
-    /* Verwijder onderlijning voor Safari */
+  -webkit-text-decoration: none;/* Verwijder onderlijning voor Safari */
 }
 
 section:nth-of-type(7) {
@@ -191,21 +190,17 @@ header {
 
   /* Logo aan de linkerkant */
   header>a:first-of-type {
-    margin-right: auto;
-    /* Zorgt ervoor dat het logo helemaal links staat */
+    margin-right: auto;/* Zorgt ervoor dat het logo helemaal links staat */
   }
 
   /* Koop hier link helemaal rechts */
   header>a:last-of-type {
     order: 1;
-    /* Zet de "Koop hier" link rechts */
-    margin-right: 1em;
+    margin-right: 1em;/* Zet de "Koop hier" link rechts */
   }
 
-  /* Hamburger menu direct rechts van de "Koop hier" link */
   nav {
-    order: 2;
-    /* Zet de hamburger menu knop rechts van de "Koop hier" link */
+    order: 2;/* Zet de hamburger menu knop rechts van de "Koop hier" link */
   }
 }
 
@@ -228,68 +223,37 @@ header>a:first-of-type {
 
 header>a:first-of-type img {
   height: 3em;
-  z-index: 100001;
-  /* Zorgt ervoor dat het logo boven het menu staat */
+  z-index: 100001;/* Zorgt ervoor dat het logo boven het menu staat */
 }
 
-/**********/
-/* FAVO's */
-/**********/
-/* header>a:last-of-type {
-  display: flex;
-  align-items: center;
-  column-gap: .25em;
-  border-radius: 50%;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-    
-  border: 2px solid #fff;
-  color: white;
-  line-height: 25px;
-  background-color: var(--button-background);
-
-      color: var(--general-background);
-  
-    -webkit-text-decoration: none;
-} */
-
+/* Koop hier knop */
 header>a:last-of-type {
   display: flex;
-  justify-content: center;
-  /* Horizontaal centreren */
-  align-items: center;
-  /* Verticaal centreren */
-  width: 40px;
-  /* Zorg dat de breedte gelijk is aan de hoogte voor een cirkel */
-  height: 40px;
-  /* Pas deze waarde aan om de grootte van de cirkel te bepalen */
-  border-radius: 50%;
-  /* Maak het element rond */
+  justify-content: center;/* Horizontaal centreren */
+  align-items: center;/* Verticaal centreren */
+  width: 40px;/* Zorg dat de breedte gelijk is aan de hoogte voor een cirkel */
+  height: 40px;/* Pas deze waarde aan om de grootte van de cirkel te bepalen */
+  border-radius: 50%;/* Maak het element rond */
   font-family: "Poppins", sans-serif;
   text-align: center;
   column-gap: 0.25em;
 
-  background-color: var(--button-background);
-  /* Achtergrondkleur */
-  color: var(--general-background);
-  /* Kleur van de tekst en SVG */
+  background-color: var(--button-background);/* Achtergrondkleur */
+  color: var(--general-background);/* Kleur van de tekst en SVG */
 
-  border: 2px solid #fff;
-  /* Witte rand */
+  border: 2px solid #fff;/* Witte rand */
 
-  text-decoration: none;
-  /* Verwijder onderlijning */
-  -webkit-text-decoration: none;
-  /* Verwijder onderlijning in Safari */
+  text-decoration: none;/* Verwijder onderlijning */
+  -webkit-text-decoration: none;/* Verwijder onderlijning in Safari */
+    z-index: 100008;
 }
 
+/* Koop hier knop */
 header>a:last-of-type svg {
-  width: 20px;
-  /* Pas aan naar gewenste grootte van de SVG */
-  height: 20px;
-  /* Pas aan naar gewenste grootte van de SVG */
-  fill: currentColor;
-  /* Zorg ervoor dat de SVG de kleur van de tekst overneemt */
+  width: 20px;/* Pas aan naar gewenste grootte van de SVG */
+  height: 20px;/* Pas aan naar gewenste grootte van de SVG */
+  fill: currentColor;/* Zorg ervoor dat de SVG de kleur van de tekst overneemt */
+    /* Zorgt ervoor dat de hamburger button altijd boven het menu staat */
 }
 
 header>a:last-of-type img {
@@ -317,8 +281,7 @@ nav button {
   text-align: center;
   color: var(--button-color);
   position: relative;
-  z-index: 100002;
-  /* Zorgt ervoor dat de hamburger button altijd boven het menu staat */
+  z-index: 100002;/* Zorgt ervoor dat de hamburger button altijd boven het menu staat */
 }
 
 nav button img {
@@ -373,7 +336,6 @@ nav a {
   height: 4em;
   font-size: 1.25em;
   font-family: 'Recoleta', sans-serif;
-  /* Zorgt ervoor dat de links niet afbreken */
 }
 
 nav a img {
@@ -405,7 +367,6 @@ nav a.active {
     justify-content: center;
     flex-direction: row;
     gap: 1em;
-    /* Centreer de navigatie-items */
   }
 
   nav li {
