@@ -1,0 +1,45 @@
+section nav ul {
+  display: flex;
+  /* Gebruik flexbox voor de layout */
+  flex-wrap: wrap;
+  /* Sta inpakken van items toe */
+  justify-content: center;
+  /* Centreer de items horizontaal */
+  list-style: none;
+  /* Verwijder standaard lijststijl */
+  padding: 0;
+  /* Verwijder padding */
+}
+
+/* Afbeeldingen */
+section nav ul li {
+  margin: 10px;
+  /* Voeg ruimte toe tussen de afbeeldingen */
+}
+
+/* Stel de breedte van de afbeeldingen in */
+section nav ul li img {
+  width: 100px;
+  /* Pas de breedte van de afbeeldingen aan */
+  height: auto;
+  /* Behoud de verhoudingen */
+}
+
+/* Voor de eerste vier afbeeldingen (4 naast elkaar) */
+section nav ul li:nth-child(-n+4) {
+  flex: 0 0 25%;
+  /* Elke afbeelding neemt 25% van de rij in (4 items per rij) */
+}
+
+/* Voor de laatste twee afbeeldingen (2 onder de 4) */
+section nav ul li:nth-child(n+5) {
+  flex: 0 0 50%;
+  /* Elke afbeelding neemt 50% van de rij in (2 items per rij) */
+  /* Centreer de laatste twee afbeeldingen */
+  display: flex;
+  /* Maak ze flex-container */
+  justify-content: center;
+  /* Centreer de inhoud */
+  align-items: center;
+  /* Zorg ervoor dat ze verticaal zijn uitgelijnd */
+}

@@ -85,25 +85,24 @@ p {
 }
 
 /* secties */
-section {
+main section {
   display: flex;
   align-items: center;
   flex-direction: column;
-
   text-align: center;
   padding: 10% 3% 0 3%;
 }
 
-section:nth-of-type(2) {
+main section:nth-of-type(2) {
   text-align: left;
 }
 
-section:nth-of-type(3) {
+main section:nth-of-type(3) {
   text-align: left;
 }
 
 /* samenstelling button */
-section:nth-of-type(3) a {
+main section:nth-of-type(3) a {
   border-radius: 30px;
   border: 2px solid #fff;
   color: white;
@@ -118,7 +117,7 @@ section:nth-of-type(3) a {
 }
 
 /* formulier sectie */
-section:nth-of-type(7) {
+main section:nth-of-type(7) {
   color: var(--general-background);
   line-height: 1.692307692307692;
   background-image: url(../images/newsletter-mob.jpg);
@@ -128,14 +127,13 @@ section:nth-of-type(7) {
   border-left: 15px solid white;
   border-right: 15px solid white;
   border-bottom: 15px solid white;
-  /* height: 60vh; */
 }
 
-section:nth-of-type(7) p {
+main section:nth-of-type(7) p {
   line-height: 1.692307692307692;
 }
 
-input {
+input:first-of-type {
   width: 100%;
   padding: 4px 19px 0;
   background: #fff;
@@ -150,17 +148,47 @@ input {
 
 label {
   font-family: PoppinsMedium,arial,sans-serif;
+  font-weight: bold;
+  text-align: left;
 
 }
 
+button {
+  display: inline-flex;
+    justify-content: center;
+    /* Horizontaal centreren */
+    align-items: center;
+    /* Verticaal centreren */
+    width: auto;
+    /* Automatische breedte zodat de knop niet te beperkt is */
+    padding: 0.5em 1.5em;
+    /* Padding om ruimte binnen de knop toe te voegen */
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border-radius: 25px;
+    /* Ronde hoeken */
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    column-gap: 0.25em;
+    /* Ruimte tussen tekst en eventuele iconen */
+  
+    background-color: #ffffff;
+    /* Witte achtergrondkleur */
+    color: black;
+    border: none;
+  
+    text-decoration: none;
+    /* Verwijder onderlijning */
+    -webkit-text-decoration: none;
+    /* Verwijder onderlijning in Safari */
+}
 
-
-section:nth-of-type(7) h2 {
+main section:nth-of-type(7) h2 {
   color: var(--general-background);
   text-align: center;
 }
 
-section:nth-of-type(7) p {
+main section:nth-of-type(7) p {
   text-align: center;
 }
 
@@ -564,10 +592,12 @@ footer section {
   background-color: var(--general-background);
 }
 
+/* bolletjes weg */
 footer section li {
   list-style: none;
 }
 
+/* tekst kleur op donkere achtergrond */
 footer section a {
   color: var(--general-color);
 } 
@@ -584,5 +614,5 @@ small {
 }
 
 footer img {
-  width: 80px;
+  width: 70px;
 }
