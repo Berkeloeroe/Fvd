@@ -530,7 +530,6 @@ footer a{
   font-size: .6875rem;
   text-decoration: none;
   color: white;
-
 }
 
 footer ul {
@@ -539,5 +538,15 @@ footer ul {
 
 /* onderste witte sectie footer */
 footer section {
+  width: 100%; /* Breedte van 100% van de footer */
+
   background-color: var(--general-background);
 }
+
+footer section li {
+  list-style: none;
+}
+
+footer section a {
+  color: var(--general-color);
+} 
