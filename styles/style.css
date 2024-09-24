@@ -134,7 +134,7 @@ main section:nth-of-type(7) p {
 }
 
 input:first-of-type {
-  width: 100%;
+  width: 90%;
   padding: 4px 19px 0;
   background: #fff;
   border: 0;
