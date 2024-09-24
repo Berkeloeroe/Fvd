@@ -279,14 +279,20 @@ header>a:last-of-type {
   display: flex;
   justify-content: center;/* Horizontaal centreren */
   align-items: center;/* Verticaal centreren */
+
   width: 40px;/* Zorg dat de breedte gelijk is aan de hoogte voor een cirkel */
+
   height: 40px;/* Pas deze waarde aan om de grootte van de cirkel te bepalen */
+
   border-radius: 50%;/* Maak het element rond */
+
   font-family: "Poppins", sans-serif;
   text-align: center;
+
   column-gap: 0.25em;
 
   margin: 0;
+  margin-right: 10px;
 
   background-color: var(--button-background);/* Achtergrondkleur */
   color: var(--general-background);/* Kleur van de tekst en SVG */
