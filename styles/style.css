@@ -708,3 +708,47 @@ small {
 footer img {
   width: 70px;
 }
+
+
+/******************************************************/
+/* styling voor de bigga-screen versie van de website */
+/******************************************************/
+@media screen and (min-width: 768px) {
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  section p{
+    text-align: center;
+    max-width: 60em;
+    font-size: .7rem;
+  }
+
+    .figure-container {
+      display: flex;/* Maak de container een flex container */
+      justify-content: space-between;/* Zorg ervoor dat er ruimte is tussen de figuren */
+      align-items: flex-start;/* Zorg ervoor dat figuren bovenaan uitlijnen */
+      flex-wrap: wrap;/* Zorg ervoor dat figuren op nieuwe regels worden geplaatst als er niet genoeg ruimte is */
+      gap: 5em;
+    }
+  
+    figure {
+      flex: 1;/* Laat elk figure gelijkmatig ruimte innemen */
+      margin: 10px;/* Voeg wat ruimte toe tussen de figuren */
+      text-align: center;/* Centreer de tekst onder de afbeelding */
+    }
+  
+    figure img {
+      width: 115px;
+      max-width: 100%;/* Zorg ervoor dat afbeeldingen responsief zijn */
+      height: auto;/* Behoud de verhoudingen van de afbeelding */
+    }
+
+    figcaption {
+          font-size: .7rem;
+    }
+
+  
+  
+}
