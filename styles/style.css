@@ -97,6 +97,10 @@ main section:nth-of-type(3) {
   text-align: left;
 }
 
+main section:nth-of-type(3) img {
+  order: -1;
+}
+
 /* samenstelling button */
 main section:nth-of-type(3) a {
   border-radius: 30px;
@@ -203,11 +207,10 @@ figcaption {
 }
 
 /* foto's */
-main img {
+/* main img {
+  width: 300px;
   max-width: 100%;
-  width: 550px;
-}
-
+} */
 
 /*************/
 /* DE HEADER */
