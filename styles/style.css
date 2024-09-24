@@ -545,10 +545,6 @@ footer nav:first-of-type ul {
   display: flex;
 }
 
-footer nav {
-  padding-bottom: 1.5625em;
-}
-
 /* links */
 footer a{
   font-family: "Poppins", sans-serif;
@@ -576,6 +572,7 @@ footer section a {
   color: var(--general-color);
 } 
 
+/* copyright footer */
 small {
   display: flex;
   flex-direction: column;
@@ -584,5 +581,8 @@ small {
   gap: .9em;
   padding-top: 9%;
   padding-bottom: 9%;
+}
 
+footer img {
+  width: 80px;
 }
