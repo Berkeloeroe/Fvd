@@ -57,17 +57,27 @@
           <a href="#meer" class="cta-button">Bekijk de video</a>
         </div>
 
+        <!-- Video met poster fallback -->
         <video
           autoplay
           muted
           loop
           class="background-video"
+          poster="images/fallback-image.jpg"
           width="1920"
           height="1080"
         >
           <source src="images/header-desktop-6s-hol.mp4" type="video/mp4" />
           Je browser ondersteunt geen video.
         </video>
+
+        <!-- Picture als fallback wanneer video niet werkt -->
+        <picture class="background-image">
+          <img
+            src="images/team-sanne.jpg"
+            alt="Achtergrondafbeelding voor SPA"
+          />
+        </picture>
       </section>
 
       <section>
