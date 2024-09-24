@@ -271,7 +271,7 @@ header>a:first-of-type {
 }
 
 header>a:first-of-type img {
-  height: 3em;
+  height: 40px;
   z-index: 100001;/* Zorgt ervoor dat het logo boven het menu staat */
 }
 
