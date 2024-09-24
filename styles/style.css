@@ -150,37 +150,29 @@ label {
   font-family: PoppinsMedium,arial,sans-serif;
   font-weight: bold;
   text-align: left;
+  max-width: 285px;
 
 }
 
 button {
   display: inline-flex;
-    justify-content: center;
-    /* Horizontaal centreren */
-    align-items: center;
-    /* Verticaal centreren */
-    width: auto;
-    /* Automatische breedte zodat de knop niet te beperkt is */
-    padding: 0.5em 1.5em;
-    /* Padding om ruimte binnen de knop toe te voegen */
+    justify-content: center;/* Horizontaal centreren */
+    align-items: center;/* Verticaal centreren */
+    width: auto;/* Automatische breedte zodat de knop niet te beperkt is */
+    padding: 0.5em 1.5em;/* Padding om ruimte binnen de knop toe te voegen */
     margin-top: 3em;
     margin-bottom: 3em;
-    border-radius: 25px;
-    /* Ronde hoeken */
+    border-radius: 25px;/* Ronde hoeken */
     font-family: "Poppins", sans-serif;
     text-align: center;
-    column-gap: 0.25em;
-    /* Ruimte tussen tekst en eventuele iconen */
+    column-gap: 0.25em;/* Ruimte tussen tekst en eventuele iconen */
   
-    background-color: #ffffff;
-    /* Witte achtergrondkleur */
+    background-color: #ffffff;/* Witte achtergrondkleur */
     color: black;
     border: none;
   
-    text-decoration: none;
-    /* Verwijder onderlijning */
-    -webkit-text-decoration: none;
-    /* Verwijder onderlijning in Safari */
+    text-decoration: none;/* Verwijder onderlijning */
+    -webkit-text-decoration: none;/* Verwijder onderlijning in Safari */
 }
 
 main section:nth-of-type(7) h2 {
