@@ -9,6 +9,7 @@
     
 *, *::after, *::before {
   box-sizing:border-box;  
+  overflow-x: hidden;
 }
 
 button:not(disabled) {
@@ -98,6 +99,8 @@ main section:nth-of-type(3) {
 }
 
 main section:nth-of-type(3) img {
+  width: 450px;
+  max-width: 100%;
   order: -1;
 }
 
