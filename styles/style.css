@@ -557,5 +557,7 @@ small {
   text-align: center;
   font-family: "Poppins", sans-serif;
   gap: .9em;
+  padding-top: 9%;
+  padding-bottom: 9%;
 
 }
