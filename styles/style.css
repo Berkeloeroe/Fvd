@@ -196,9 +196,15 @@ figure {
   font-style: normal;
 }
 
+figcaption {
+  max-width: 185px;
+  font-size: .875em;
+  line-height: 2.142857142857143;
+}
+
 /* foto's */
-img {
-  max-width: 300px;
+main img {
+  max-width: 550px;
 }
 
 
@@ -522,7 +528,7 @@ header nav a.active {
   z-index: -1;
 }
 
-/* Fallback-afbeelding (alleen zichtbaar als video niet werkt) */
+/* Fallback-afbeelding vult de hele sectie */
 .background-image {
   display: none;
   position: absolute;
@@ -531,6 +537,9 @@ header nav a.active {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* Zorgt ervoor dat de afbeelding de hele sectie vult */
+  object-position: center;
+  /* Centreer de afbeelding */
   z-index: -1;
 }
 
