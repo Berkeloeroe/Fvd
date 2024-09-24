@@ -21,15 +21,11 @@ button:not(disabled) {
 :root {
   --general-color:#263746;
   --general-background:#fff;
-  
   --header-gradient:linear-gradient(#f8a, #fbd);
-  
   --menu-gradient:linear-gradient(#8af, #bdf);
   --menu-border:#46f;
-  
   --button-color:#263746ff;
   --button-background:#263746;
-  
   --title-gradient:linear-gradient(#f46 40%, #f8a 80%);
 }
 
@@ -133,6 +129,7 @@ main section:nth-of-type(7) p {
   line-height: 1.692307692307692;
 }
 
+/* vul email in */
 input:first-of-type {
   width: 90%;
   padding: 4px 19px 0;
@@ -146,6 +143,7 @@ input:first-of-type {
   line-height: 1.666666666666667;
 }
 
+/* label tekst */
 label {
   font-family: PoppinsMedium,arial,sans-serif;
   font-weight: bold;
@@ -154,6 +152,7 @@ label {
 
 }
 
+/* ik schrijf me in button */
 button {
   display: inline-flex;
     justify-content: center;/* Horizontaal centreren */
@@ -195,11 +194,6 @@ figure {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
-}
-
-/* huidige pagina link */
-a[aria-current="page"] {
-  color: #0671CE;
 }
 
 /* foto's */
@@ -257,6 +251,11 @@ header a {
   padding: .5em 0;
   color: var(--general-color);
   text-decoration: none;
+}
+
+/* huidige pagina link */
+a[aria-current="page"] {
+  color: #0671CE;
 }
 
 /********/
@@ -325,7 +324,7 @@ header nav button {
   align-items: center;
   gap: .25em;
   appearance: none;
-  /* background-color: var(--button-background); */
+  background-color: transparent;
   border: none;
   border-radius: .25em;
   font: inherit;
@@ -344,9 +343,10 @@ nav.toonMenu button {
   background-color: var(--button-background);
 }
 
-nav.toonMenu button img {
+/* deze weet ik niet meer */
+/* nav.toonMenu button img {
   content: url("https://assets.codepen.io/274456/ui-icon-cross.svg");
-}
+} */
 
 /*******************/
 /* LIJST MET LINKS */
