@@ -539,7 +539,7 @@ footer ul {
 /* onderste witte sectie footer */
 footer section {
   width: 100%; /* Breedte van 100% van de footer */
-
+  padding: 0;
   background-color: var(--general-background);
 }
 
@@ -550,3 +550,12 @@ footer section li {
 footer section a {
   color: var(--general-color);
 } 
+
+small {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  gap: .9em;
+
+}
