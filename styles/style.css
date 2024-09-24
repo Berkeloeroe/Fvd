@@ -51,6 +51,8 @@ body {
 /******************************************************/
 /* jouw code */
 
+
+/* headings */
 h1 {
   color: white;
   font-size: 2.125rem;
@@ -72,6 +74,7 @@ h3 {
   margin: 0;
 }
 
+/* body tekst */
 p {
   font-size: 0.875em;
   font-family: "Poppins", sans-serif;
@@ -81,6 +84,7 @@ p {
   text-align: left;
 }
 
+/* secties */
 section {
   display: flex;
   align-items: center;
@@ -101,7 +105,6 @@ section:nth-of-type(3) {
 /* samenstelling button */
 section:nth-of-type(3) a {
   border-radius: 30px;
-  /* font-family: "Poppins", sans-serif; */
   border: 2px solid #fff;
   color: white;
   line-height: 38px;
@@ -114,6 +117,7 @@ section:nth-of-type(3) a {
   text-decoration: none;
 }
 
+/* formulier sectie */
 section:nth-of-type(7) {
   color: var(--general-background);
   background-image: url(../images/newsletter-mob.jpg);
@@ -135,6 +139,7 @@ section:nth-of-type(7) p {
   text-align: center;
 }
 
+/* secties met 3 figures */
 figure {
   /* display: flex; */
   justify-content: center; /* Horizontaal centreren */
@@ -147,15 +152,12 @@ figure {
   font-style: normal;
 }
 
-footer {
-  padding-top: 10%;
-  background-color: var(--general-color);
-}
-
+/* huidige pagina link */
 a[aria-current="page"] {
   color: #0671CE;
 }
 
+/* foto's */
 img {
   max-width: 300px;
 }
@@ -178,6 +180,10 @@ header {
   position: sticky;
   top: 0;
   z-index: 10000000000;
+}
+
+header svg {
+  width: 55px;
 }
 
 /* Voor kleine schermen */
@@ -472,8 +478,11 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-top: 10%;
+  background-color: var(--general-color);
 }
 
+/* 2 grote svgs */
 footer svg {
   width: 125px;
   padding-bottom: 1em;
@@ -502,6 +511,7 @@ footer > a:first-of-type {
 
 }
 
+/* social media links */
 footer nav svg {
   width: 50px;
 }
@@ -510,11 +520,11 @@ footer nav:first-of-type ul {
   display: flex;
 }
 
-
 footer nav {
   padding-bottom: 1.5625em;
 }
 
+/* links */
 footer a{
   font-family: "Poppins", sans-serif;
   font-size: .6875rem;
@@ -525,4 +535,9 @@ footer a{
 
 footer ul {
   padding: 0;
+}
+
+/* onderste witte sectie footer */
+footer section {
+  background-color: var(--general-background);
 }
