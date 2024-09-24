@@ -50,10 +50,6 @@ body {
 /* styling voor de small-screen versie van de website */
 /******************************************************/
 /* jouw code */
-a[aria-current="page"] {
-  font-weight: bold;
-  color: #0671CE;
-}
 
 h1 {
   color: white;
@@ -71,7 +67,7 @@ h2 {
 
 h3 {
   color: var(--general-background);
-  font-size: 0.8em;
+  font-size: 1rem;
   font-family: 'Recoleta', sans-serif;
   margin: 0;
 }
@@ -157,7 +153,7 @@ footer {
 }
 
 a[aria-current="page"] {
-  font-weight: bold;
+  color: #0671CE;
 }
 
 img {
@@ -201,7 +197,7 @@ header {
     margin-right: 1em;/* Zet de "Koop hier" link rechts */
   }
 
-  nav {
+  header nav {
     order: 2;/* Zet de hamburger menu knop rechts van de "Koop hier" link */
   }
 }
@@ -270,7 +266,7 @@ header>a:last-of-type img {
 /***************/
 /* MENU BUTTON */
 /***************/
-nav button {
+header nav button {
   padding: .5em;
   display: flex;
   align-items: center;
@@ -286,7 +282,7 @@ nav button {
   z-index: 100002;/* Zorgt ervoor dat de hamburger button altijd boven het menu staat */
 }
 
-nav button img {
+header nav button img {
   height: 1em;
 }
 
@@ -302,7 +298,7 @@ nav.toonMenu button img {
 /*******************/
 /* LIJST MET LINKS */
 /*******************/
-nav ul {
+header nav ul {
   margin: 0;
   padding: 6em 1em 0;
   list-style: none;
@@ -330,7 +326,7 @@ nav.toonMenu ul {
 /************************/
 /* EEN LINK IN DE LIJST */
 /************************/
-nav a {
+header nav a {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -340,12 +336,12 @@ nav a {
   font-family: 'Recoleta', sans-serif;
 }
 
-nav a img {
+header nav a img {
   width: auto;
   height: 2em;
 }
 
-nav a.active {
+header nav a.active {
   font-weight: bold;
 }
 
@@ -353,15 +349,15 @@ nav a.active {
 /* styling voor de header als de browser minimaal 38em breed is */
 /****************************************************************/
 @media (min-width: 38em) {
-  nav {
+  header nav {
     order: 0;
   }
 
-  nav button {
+  header nav button {
     display: none;
   }
 
-  nav ul {
+  header nav ul {
     position: static;
     translate: none;
     background: none;
@@ -371,12 +367,12 @@ nav a.active {
     gap: 1em;
   }
 
-  nav li {
+  header nav li {
     flex-basis: auto;
     /* flex-grow: 0; */
   }
 
-  nav a {
+  header nav a {
     /* padding: 0.5em 1em; */
     text-align: center;
     white-space: nowrap;
@@ -462,4 +458,34 @@ nav a.active {
 .hero-content .cta-button {
   order: 2;
   /* Verplaats de a (cta-button) naar de tweede plek */
+}
+
+
+
+
+/****************************************************************/
+/* Footer */
+/****************************************************************/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer nav {
+  padding-bottom: 1.5625em;
+}
+
+footer a{
+  font-family: "Poppins", sans-serif;
+  font-size: .6875rem;
+  text-decoration: none;
+  color: white;
+
+}
+
+footer ul {
+  padding: 0;
 }
