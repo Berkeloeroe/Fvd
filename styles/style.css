@@ -479,6 +479,7 @@ footer svg {
   padding-bottom: 1em;
 }
 
+/* klanten service button */
 footer > a:first-of-type {
   display: inline-flex;
   justify-content: center; /* Horizontaal centreren */
@@ -499,6 +500,14 @@ footer > a:first-of-type {
   text-decoration: none; /* Verwijder onderlijning */
   -webkit-text-decoration: none; /* Verwijder onderlijning in Safari */
 
+}
+
+footer nav svg {
+  width: 50px;
+}
+
+footer nav:first-of-type ul {
+  display: flex;
 }
 
 
