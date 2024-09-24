@@ -287,6 +287,8 @@ header>a:last-of-type {
   text-align: center;
   column-gap: 0.25em;
 
+  margin: 0;
+
   background-color: var(--button-background);/* Achtergrondkleur */
   color: var(--general-background);/* Kleur van de tekst en SVG */
 
