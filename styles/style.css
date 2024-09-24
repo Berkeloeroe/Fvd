@@ -120,6 +120,7 @@ section:nth-of-type(3) a {
 /* formulier sectie */
 section:nth-of-type(7) {
   color: var(--general-background);
+  line-height: 1.692307692307692;
   background-image: url(../images/newsletter-mob.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -129,6 +130,30 @@ section:nth-of-type(7) {
   border-bottom: 15px solid white;
   height: 60vh;
 }
+
+section:nth-of-type(7) p {
+  line-height: 1.692307692307692;
+}
+
+input {
+  width: 100%;
+  padding: 4px 19px 0;
+  background: #fff;
+  border: 0;
+  outline: 0;
+  min-height: 40px;
+  font-family: PoppinsMedium,arial,sans-serif;
+  font-size: 15px;
+  font-size: .9375rem;
+  line-height: 1.666666666666667;
+}
+
+label {
+  font-family: PoppinsMedium,arial,sans-serif;
+
+}
+
+
 
 section:nth-of-type(7) h2 {
   color: var(--general-background);
