@@ -813,7 +813,8 @@ footer img {
     }
 
     figcaption {
-          font-size: .7rem;
+          /* font-size: .7rem; */
+              font-size: .875em;
     }
 
     /* sectie met groot spa flesje */
