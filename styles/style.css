@@ -724,6 +724,52 @@ footer img {
 /******************************************************/
 @media screen and (min-width: 768px) {
 
+  header nav {
+      position: relative;
+      /* Zorg ervoor dat de nav relatieve positie heeft */
+    }
+  
+    header nav a {
+      position: relative;
+      /* Zorg ervoor dat de link relatieve positie heeft */
+      /* padding: 0.5em 0; */
+      padding: 0;
+      /* Voeg wat padding toe aan de link */
+      color: var(--general-color);
+      text-decoration: none;
+      overflow: hidden;
+      /* Zorg ervoor dat de lijn niet buiten de link komt */
+    }
+  
+    header nav a::after {
+      content: "";
+      /* Zorg ervoor dat het pseudo-element zichtbaar is */
+      position: absolute;
+      left: 0;
+      /* Begin aan de linkerkant */
+      bottom: 20px;
+      /* Plaats het dichter bij de onderkant van de link (verander deze waarde) */
+      height: 2px;
+      /* Dikte van de lijn */
+      width: 100%;
+      /* Breedte van de lijn */
+      background-color: var(--general-color);
+      /* Kleur van de lijn */
+      transform: translateX(-100%);
+      /* Begin buiten het zicht */
+      transition: transform 0.3s ease;
+      /* Maak de overgang soepel */
+    }
+  
+    header nav a:hover::after {
+      transform: translateX(0);
+      /* Verplaats de lijn naar rechts bij hover */
+    }
+
+        .hero-content h1 {
+      font-size: 5em;
+    }
+
   h2 {
     font-size: 3rem;
   }
