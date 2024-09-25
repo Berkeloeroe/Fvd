@@ -739,6 +739,7 @@ footer img {
       width: 750px;
     }
 
+    /* secties met 3 figures */
     .figure-container {
       display: flex;/* Maak de container een flex container */
       justify-content: space-between;/* Zorg ervoor dat er ruimte is tussen de figuren */
@@ -768,6 +769,25 @@ footer img {
           font-size: .7rem;
     }
 
-  
-  
+    /* sectie met groot spa flesje */
+        main section:nth-of-type(3) {
+         display: flex;
+         flex-direction: row;
+         order: 1;
+        }
+
+        main section:nth-of-type(3) img {
+          width: 50%;  
+          order: 1;        
+        }
+    
+        article {
+          width: 50%;
+          text-align: left;
+        }
+
+        article p {
+        text-align: left;
+        }
+
 }
