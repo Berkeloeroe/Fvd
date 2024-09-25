@@ -731,7 +731,8 @@ footer img {
   section p{
     text-align: center;
     max-width: 60em;
-    font-size: .7rem;
+    /* font-size: .7rem; */
+    font-size: .875em;
   }
 
     /* spa water foto */
@@ -788,6 +789,7 @@ footer img {
 
         article p {
         text-align: left;
+        max-width: 350px;
         }
 
 }
