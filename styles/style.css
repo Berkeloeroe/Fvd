@@ -488,10 +488,15 @@ header nav a.active {
 /* hero sectie */
 /****************************************************************/
 /* Hero sectie */
+/* header {
+  background-color: transparent;
+  color: white;
+} */
+
 .hero {
+  /* margin-top: -90px; */
   position: relative;
-  height: 90vh;
-  /* Volledige hoogte van het venster */
+  height: 90vh;/* Volledige hoogte van het venster */
   overflow: hidden;
   /* border-radius: 0 0 25px 25px; */
   border-radius: 25px 25px 25px 25px;
