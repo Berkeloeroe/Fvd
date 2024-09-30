@@ -208,6 +208,11 @@ button {
   -webkit-text-decoration: none;/* Verwijder onderlijning in Safari */
 }
 
+button:hover {
+  color: white;
+  background-color: #263746;
+}
+
 /* secties met 3 figures */
 /* chatgpt:"Hoe kan ik een sectie met drie figuren in CSS opmaken waarbij de tekst en afbeelding gecentreerd zijn, en de tekst onder de afbeelding staat?" */
 figure {
@@ -848,6 +853,12 @@ footer img {
     /* label tekst */
     label {
       max-width: 450px;
+    }
+
+    /* vul email in inputveld */
+    input:first-of-type {
+      width: 20%;
+          
     }
 
 }
