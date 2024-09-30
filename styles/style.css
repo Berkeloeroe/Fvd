@@ -738,10 +738,10 @@ footer img {
     header nav {
         position: relative;/* Zorg ervoor dat de nav relatieve positie heeft */
       }
-  
+      
+    /* onderlijning animatie op nav links */
     header nav a {
       position: relative;/* Zorg ervoor dat de link relatieve positie heeft */
-      /* padding: 0.5em 0; */
       padding: 0;/* Voeg wat padding toe aan de link */
       color: var(--general-color);
       text-decoration: none;
