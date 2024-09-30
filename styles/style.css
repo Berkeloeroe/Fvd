@@ -133,6 +133,11 @@ main section:nth-of-type(3) a:hover {
   color: #263746;
 }
 
+main section:nth-of-type(5) {
+  background: linear-gradient(180deg, rgba(125, 185, 232, 0) 0, rgba(198, 224, 238, 0) 20%, #d7e9f0 40%);
+}
+
+
 /* formulier sectie */
 /* chatgpt:"Kun je een CSS-stijl maken voor de zevende sectie van een formulier met een achtergrondafbeelding, afgeronde hoeken en een gekleurde tekst?" */
 main section:nth-of-type(7) {
