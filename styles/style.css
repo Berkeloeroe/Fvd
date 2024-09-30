@@ -845,4 +845,9 @@ footer img {
       max-width: 30em;
     }
 
+    /* label tekst */
+    label {
+      max-width: 450px;
+    }
+
 }
