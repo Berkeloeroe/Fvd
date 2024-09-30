@@ -272,7 +272,7 @@ header svg {
 }
 
 /* Voor kleine schermen */
-@media (max-width: 38em) {
+@media (max-width: 65em) {
   header {
     justify-content: space-between;
   }
@@ -490,7 +490,7 @@ header nav a.active {
 /****************************************************************/
 /* styling voor de header als de browser minimaal 38em breed is */
 /****************************************************************/
-@media (min-width: 38em) {
+@media (min-width: 65em) {
   header nav {
     order: 0;
   }

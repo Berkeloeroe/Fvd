@@ -58,9 +58,8 @@ Tips & Inspiratie pagina
 
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-De website van Spa is goed toegankelijk. Bijna alles heb ik kunnen afvinken met de WCAG checklist.
-
-De overige dingen die niet goed waren ga ik zelf verbeteren.
+-De website van Spa is goed toegankelijk. Bijna alles heb ik kunnen afvinken met de WCAG checklist.
+-De overige dingen die niet goed waren ga ik zelf verbeteren.
 
 </details>
 
@@ -79,6 +78,8 @@ De overige dingen die niet goed waren ga ik zelf verbeteren.
 
 ### wellicht nog een dynamisch deel (bijv filter):
 
+Nvt
+
   <!-- <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel"> -->
 
 </details>
@@ -92,9 +93,10 @@ De overige dingen die niet goed waren ga ik zelf verbeteren.
 
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-Alle html op de pagina zetten ging goed daar was niet zo veel aan.
+-Alle html op de pagina zetten ging goed daar was niet zo veel aan.
 
-De css daar in tegen is wel tricky. Ik ben nu nog bezig met de header wat al redelijk gaat met behulp van de oefen opdrachten en chatgpt.
+-De css daar in tegen is wel tricky. Ik ben nu nog bezig met de header wat al redelijk gaat met behulp van de oefen opdrachten en chatgpt.
+
 <img src="readme-images/eerste html.png" width="375px" alt="breakdown van een dynamisch deel">
 <img src="readme-images/html.png" width="375px" alt="breakdown van een dynamisch deel">
 
@@ -112,10 +114,8 @@ samen met je groepje opstellen
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1: ik heb door Chatgpt paar foutjes gemaakt
-- punt 2
-- nog een punt
-- ...
+- punt 1: Ik heb door Chatgpt paar foutjes gemaakt
+- punt 2: Meer zelf gaan coderen
 
 </details>
 
@@ -128,17 +128,19 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+-Met behulp van de header opdracht heb ik de header na kunnen maken grotendeels
+
+-Fontface lukte niet om mijn font er op te krijgen
+
 ### Agenda voor meeting
 
 samen met je groepje opstellen
 
-| Randi          | Joep               | lois         | student 4        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| Font family    | gradient op tekst  |
-
-                   | ...en foto          | ...              |
+| Randi       | Joep               | lois         | student 4        |
+| ----------- | ------------------ | ------------ | ---------------- |
+|             | en dit             | en ik dit    | en dan ik dat    |
+|             | dit als er tijd is | nog een punt | dit wil ik zeker |
+| Font family | gradient op tekst  |
 
 ### Verslag van meeting
 
@@ -147,7 +149,8 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 - punt 1: Font family probleem opgelost
 - punt 2: Ik moet de header prioriteit geven
 - punt 3: beginnen aan de footer
-- punt 4: html zag er wel goed uit
+- punt 4: html zag er wel goed uit met paar verbeter puntjes
+- punt 5: Via inspect bij netwerk kan ik foto's en dergelijke opslaan
 
 </details>
 
@@ -160,6 +163,8 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+-Op mijn website kan je goed naar alle headings navigeren wat niet kan bij de offical spa site
+
 </details>
 
 ## Voortgang 3 (week 4)
@@ -171,24 +176,30 @@ Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er v
 
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+-Alles responsive maken ging goed
+-Bugs oplossen goed
+
+-Footer was lastig
+
 ### Agenda voor meeting
 
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Randi          | student 2          | student 3    | student 4        |
 | -------------- | ------------------ | ------------ | ---------------- |
 | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Button svg     |
+| die responsive |
 
 ### Verslag van meeting
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Ik heb nog wat divs en classes in m'n html
+- Het ziet er al wel goed uit
+- Bron vermelding overal doen
+- Moet dingen kunnen uitleggen
 
 </details>
 
@@ -223,8 +234,8 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 Nb. ChatGpT en andere AI horen er ook bij.
 Nb. Vermeld de bronnen ook in je code.
 
-1. bron 1
-2. bron 2
-3. ...
+1. ChatGpt prompts
+2. Opdrachten van Sanne
+3. Content en styling van Spa
 
 </details>
