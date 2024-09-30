@@ -229,7 +229,6 @@ button:hover {
 /* secties met 3 figures */
 /* chatgpt:"Hoe kan ik een sectie met drie figuren in CSS opmaken waarbij de tekst en afbeelding gecentreerd zijn, en de tekst onder de afbeelding staat?" */
 figure {
-  /* display: flex; */
   justify-content: center; /* Horizontaal centreren */
   align-items: center;     /* Verticaal centreren */
   flex-direction: column;  /* Stapelt items verticaal (voor figcaption en img) */
@@ -322,16 +321,16 @@ header>a:first-of-type img {
 }
 
 /* Koop hier knop */
-header>a:last-of-type {
+/* header>a:last-of-type {
   display: flex;
-  justify-content: center;/* Horizontaal centreren */
-  align-items: center;/* Verticaal centreren */
+  justify-content: center;
+  align-items: center;
 
-  width: 40px;/* Zorg dat de breedte gelijk is aan de hoogte voor een cirkel */
+  width: 40px;
 
-  height: 40px;/* Pas deze waarde aan om de grootte van de cirkel te bepalen */
+  height: 40px;
 
-  border-radius: 50%;/* Maak het element rond */
+  border-radius: 50%;
 
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -341,22 +340,59 @@ header>a:last-of-type {
   margin: 0;
   margin-right: 10px;
 
-  background-color: var(--button-background);/* Achtergrondkleur */
-  color: var(--general-background);/* Kleur van de tekst en SVG */
+  background-color: var(--button-background);
+  color: var(--general-background);
 
-  border: 2px solid #fff;/* Witte rand */
+  border: 2px solid #fff;
 
-  text-decoration: none;/* Verwijder onderlijning */
-  -webkit-text-decoration: none;/* Verwijder onderlijning in Safari */
+  text-decoration: none;
+  -webkit-text-decoration: none;
     z-index: 100008;
+} */
+
+/* Koop hier knop svg*/
+/* header>a:last-of-type svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+} */
+
+/* button van de docent */
+header>a:last-of-type {
+    width: 2.5em;
+    height: 2.25em;
+    display: flex;
+    align-items: center;
+    background-color: var(--button-background);
+    color: var(--general-background);
+    border: 2px solid var(--general-background);
+    padding-left: 2.5em;
+    overflow: hidden;
+    border-radius: 1.25em;
+  
+    background-image: url("../images/shopping-cart-outline-svgrepo-com.svg");
+    background-size: 1.5em 1.5em;
+    background-repeat: no-repeat;
+    background-position: .5em .5em;
+
+    
+
+      font-family: "Poppins", sans-serif;
 }
 
-/* Koop hier knop */
-header>a:last-of-type svg {
-  width: 20px;/* Pas aan naar gewenste grootte van de SVG */
-  height: 20px;/* Pas aan naar gewenste grootte van de SVG */
-  fill: currentColor;/* Zorg ervoor dat de SVG de kleur van de tekst overneemt */
-    /* Zorgt ervoor dat de hamburger button altijd boven het menu staat */
+header>a:last-of-type:hover {
+  background-color: var(--general-background);
+  color: var(--general-color);
+  border: 2px solid var(--button-background);
+      background-image: url("../images/shopping-cart-outline-svgrepo-com\ \(2\).svg");
+
+}
+
+@media (width>40em) {
+  header>a:last-of-type {
+    width: auto;
+    padding: 0 1em 0 2.5em;
+  }
 }
 
 header>a:last-of-type img {
