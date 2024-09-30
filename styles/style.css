@@ -840,4 +840,9 @@ footer img {
       max-width: 65%;
     }
 
+    /* formulier sectie */
+    main section:nth-of-type(7) p {
+      max-width: 30em;
+    }
+
 }
