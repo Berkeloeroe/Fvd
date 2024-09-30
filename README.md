@@ -200,6 +200,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 - Het ziet er al wel goed uit
 - Bron vermelding overal doen
 - Moet dingen kunnen uitleggen
+- 2e pagina beginnen
 
 </details>
 
