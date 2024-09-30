@@ -193,16 +193,20 @@
           Blijf je graag op de hoogte van het laatste nieuws en verfrissende
           kortingen én neem je graag deel aan onze wedstrijden en events?
         </p>
+        <!-- ik heb deze code in chatgpt gezet met de error:Error: The value of the for attribute of the label element must be the ID of a non-hidden form control. -->
+        <!-- Fix: Added id="email" to the input element -->
         <label for="email">Email:</label>
-        <input type="email" placeholder="Voer je e-mailadres in" />
+        <input type="email" id="email" placeholder="Voer je e-mailadres in" />
+
         <input type="checkbox" id="subscribe" name="subscribe" />
-        <label for="subscribe"
-          >Ik ga ermee akkoord dat mijn gegevens kunnen worden doorgegeven aan
+        <label for="subscribe">
+          Ik ga ermee akkoord dat mijn gegevens kunnen worden doorgegeven aan
           verschillende partners zodat SPA mij communicatie, promoties en andere
           reclame van SPA en haar partners kan voorstellen wanneer ik actief ben
           op het internet of via sociale netwerken. Raadpleeg onze
-          privacy-beleid voor meer info.</label
-        >
+          <a href="privacy-policy-link">privacy-beleid</a> voor meer info.
+        </label>
+
         <button>Ik schrijf me in</button>
         <p>Haal meer uit het leven</p>
       </section>
