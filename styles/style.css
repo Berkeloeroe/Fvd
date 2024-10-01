@@ -170,6 +170,7 @@ main section:nth-of-type(5) {
   background: linear-gradient(180deg, rgba(125, 185, 232, 0) 0, rgba(198, 224, 238, 0) 20%, #d7e9f0 40%);
 }
 
+/* youtube video sectie */
 main section:nth-of-type(6) {
   background-image: url('../images/back-360vid_d36e070eea94d75c69dd35b683a3cd26.jpeg');
   background-size: cover;
@@ -178,22 +179,17 @@ main section:nth-of-type(6) {
   padding-bottom: 5%;
 }
 
+/* chatgpt:op mijn mobiele scherm heb ik nu overflow omdat die video te groot is hoe pas ik hem aan voor klein scherm */
 main section:nth-of-type(6) figure {
-position: relative;
-  /* Zorgt ervoor dat de container de juiste positie heeft */
-  width: 100%;
-  /* Laat de container de volle breedte van de sectie innemen */
-  padding-top: 56.25%;
-  /* Dit zorgt voor een aspect ratio van 16:9 (56.25% = 9/16 * 100) */
-  overflow: hidden;
-  /* Voorkomt dat de video buiten de container steekt */
+position: relative;/* Zorgt ervoor dat de container de juiste positie heeft */
+  width: 100%;/* Laat de container de volle breedte van de sectie innemen */
+  padding-top: 56.25%;/* Dit zorgt voor een aspect ratio van 16:9 (56.25% = 9/16 * 100) */
+  overflow: hidden;/* Voorkomt dat de video buiten de container steekt */
   border-radius: 15px;
 }
 
+/* youtube video */
 iframe {
-  /* border-radius: 15px;
-  overflow: hidden; */
-
   position: absolute;
     /* Hiermee positioneer je de video binnen de container */
     top: 0;
