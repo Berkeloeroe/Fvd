@@ -28,20 +28,27 @@
 /*********************/
 :root {
 	/* startje */
-	--sommige-headings: #263746;
+	--sommige-headings:#263746;
 	--bijna-alle-tekst:#fff;
-	--color-background:#fff;
+	--html-background:#fff;
+	--donkere-knopjes:#263746;
+	--lichtere-knopjes:#fff;
+	--donkerblauw:#263746;
 }
 
 
-		/* color: #0071ce; */
 
 
 /****************/
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
+/* typografie */
+
+body {
+	padding: 5%;
+}
+
  h1, h2, h3 {
 	font-family: 'Recoleta', sans-serif;
 	font-size: 5rem;
@@ -60,7 +67,7 @@ section {
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
-	display: flex;
+	border-radius: 25px 25px 25px 25px;
 }
 
 figure {
@@ -84,7 +91,7 @@ img {
 /* Positioneer de tekst op de afbeelding */
 figcaption {
 	position: absolute;
-	color: white;
+	color: var(--bijna-alle-tekst);
 	text-align: center;
 }
 
@@ -94,16 +101,16 @@ a.cta {
 	margin-top: 20px;
 	padding: 10px 30px;
 	font-size: 1.5rem;
-	color: white;
-	background-color: #ff6200;
+	color: var(--donkerblauw);
+	background-color: var(--lichtere-knopjes);
 	text-decoration: none;
-	border-radius: 5px;
+	border-radius: 1.25em;	
 	transition: background-color 0.3s ease;
 }
 
 a.cta:hover {
-	background-color: #e55b00;
-	/* Verander kleur bij hover */
+	background-color: var(--donkere-knopjes);
+	color: var(--bijna-alle-tekst);
 }
 
 /* Eerste slide */

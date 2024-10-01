@@ -900,7 +900,7 @@ footer img {
 }
 
 /* Stijlen voor dark mode */
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --standaard-lichte-achtergrond: #263746;
     --secundaire-donkere-achtergrond: #11181f;
@@ -911,4 +911,4 @@ footer img {
     --standaard-button-kleur: #fff;
     --standaard-button-accent-kleur: #263746;
     }
-} */
+}
