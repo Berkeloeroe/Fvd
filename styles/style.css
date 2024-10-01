@@ -178,9 +178,34 @@ main section:nth-of-type(6) {
   padding-bottom: 5%;
 }
 
-iframe {
-  border-radius: 15px;
+main section:nth-of-type(6) figure {
+position: relative;
+  /* Zorgt ervoor dat de container de juiste positie heeft */
+  width: 100%;
+  /* Laat de container de volle breedte van de sectie innemen */
+  padding-top: 56.25%;
+  /* Dit zorgt voor een aspect ratio van 16:9 (56.25% = 9/16 * 100) */
   overflow: hidden;
+  /* Voorkomt dat de video buiten de container steekt */
+  border-radius: 15px;
+}
+
+iframe {
+  /* border-radius: 15px;
+  overflow: hidden; */
+
+  position: absolute;
+    /* Hiermee positioneer je de video binnen de container */
+    top: 0;
+    /* Plaatst de video bovenaan de container */
+    left: 0;
+    /* Plaatst de video links in de container */
+    width: 100%;
+    /* Laat de video de volle breedte van de container innemen */
+    height: 100%;
+    /* Laat de video de volle hoogte van de container innemen */
+    border-radius: 15px;
+    /* Zorgt voor afgeronde hoeken van de video */
 }
 
 
