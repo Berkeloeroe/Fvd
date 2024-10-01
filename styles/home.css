@@ -241,9 +241,11 @@ section:nth-of-type(4) a:hover {
 	background-color: var(--lichtere-knopjes);
 }
 
-/* Stijlen voor de 5e en 7e sectie */
+/* Stijlen voor de 5e, 7e, 8e en 9e sectie */
 section:nth-of-type(5),
-section:nth-of-type(7) {
+section:nth-of-type(7),
+section:nth-of-type(8),
+section:nth-of-type(9) {
 	position: relative;
 	width: 100%;
 	height: 100vh;
@@ -253,7 +255,9 @@ section:nth-of-type(7) {
 }
 
 section:nth-of-type(5) figure,
-section:nth-of-type(7) figure {
+section:nth-of-type(7) figure,
+section:nth-of-type(8) figure,
+section:nth-of-type(9) figure {
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -262,7 +266,9 @@ section:nth-of-type(7) figure {
 }
 
 section:nth-of-type(5) img,
-section:nth-of-type(7) img {
+section:nth-of-type(7) img,
+section:nth-of-type(8) img,
+section:nth-of-type(9) img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -270,14 +276,18 @@ section:nth-of-type(7) img {
 }
 
 section:nth-of-type(5) figcaption,
-section:nth-of-type(7) figcaption {
+section:nth-of-type(7) figcaption,
+section:nth-of-type(8) figcaption,
+section:nth-of-type(9) figcaption {
 	position: absolute;
 	color: var(--bijna-alle-tekst);
 	text-align: center;
 }
 
 section:nth-of-type(5) a,
-section:nth-of-type(7) a {
+section:nth-of-type(7) a,
+section:nth-of-type(8) a,
+section:nth-of-type(9) a {
 	display: inline-block;
 	margin-top: 20px;
 	padding: 1em 2.5em;
@@ -290,7 +300,9 @@ section:nth-of-type(7) a {
 }
 
 section:nth-of-type(5) a:hover,
-section:nth-of-type(7) a:hover {
+section:nth-of-type(7) a:hover,
+section:nth-of-type(8) a:hover,
+section:nth-of-type(9) a:hover {
 	background-color: var(--donkere-knopjes);
 	color: var(--bijna-alle-tekst);
 }
