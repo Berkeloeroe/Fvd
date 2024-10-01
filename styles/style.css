@@ -20,13 +20,6 @@ button:not(disabled) {
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-  --general-color:#263746;
-  --general-background:#fff;
-  --menu-border:#46f;
-  --button-color:#263746ff;
-  --button-background:#263746;
-  --title-gradient:linear-gradient(#f46 40%, #f8a 80%);
-
   --standaard-lichte-achtergrond:#fff;
   --secundaire-donkere-achtergrond:#263746;
 
@@ -601,7 +594,7 @@ header nav a.active {
 }
 
 .hero-content .cta-button:hover {
-  background-color: var(--standaard-button-accent-kleur));
+  background-color: var(--standaard-button-accent-kleur);
 }
 
 /* Video-element */
@@ -923,4 +916,18 @@ footer img {
             width: 50%;
     }
 
+}
+
+/* Stijlen voor dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --standaard-lichte-achtergrond: #263746;
+    --secundaire-donkere-achtergrond: #11181f;
+  
+    --standaard-donkere-tekst-kleur: #fff;
+    --secundaire-lichte-tekst-kleur: #fff;
+  
+    --standaard-button-kleur: #fff;
+    --standaard-button-accent-kleur: #263746;
+    }
 }
