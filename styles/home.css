@@ -57,7 +57,8 @@ body {
 
 p {
 	font-family: "Poppins", sans-serif;
-	font-size: .875rem;
+	/* font-size: .875rem; */
+	font-size: 1.5rem;
 	line-height: 2.142857142857143;
 	color: var(--bijna-alle-tekst);
 } 
@@ -171,7 +172,6 @@ section:nth-of-type(4) {
 	justify-content: space-between;
 	margin-top: 5%;
 	border-radius: 25px;
-	/* Korter, dit is de standaard voor alle hoeken */
 	background-image: url('../images/home-fotos/bg-1.jpg');
 	background-size: cover;
 	background-position: center;
