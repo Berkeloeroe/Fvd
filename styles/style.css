@@ -132,7 +132,7 @@ main section:nth-of-type(3) a {
   /* font-family: "Poppins", sans-serif; */
   border-radius: 30px;
   border: 2px solid #fff;
-  color: white;
+  color: var(--standaard-lichte-achtergrond);
   line-height: 38px;
   padding: .8em 0;
 
