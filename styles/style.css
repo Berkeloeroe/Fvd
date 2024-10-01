@@ -155,9 +155,9 @@ main section:nth-of-type(3) a:hover {
 /* Natuurlijk gefilterd door de rotsen in de Ardennen */
 main section:nth-of-type(4) {
   background-image: url('../images/back-voyage_eea4e34a800277d6a0b277089f368451.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* een lange ondergrondse reis */
@@ -180,7 +180,7 @@ main section:nth-of-type(7) {
 }
 
 main section:nth-of-type(7) h2 {
-  color: var(--standaard-lichte-achtergrond);
+  color: var(--secundaire-lichte-tekst-kleur);
   text-align: center;
 }
 
@@ -199,7 +199,7 @@ main section:nth-of-type(7) p:last-of-type {
 input:first-of-type {
   width: 90%;
   padding: 4px 19px 0;
-  background: var(--standaard-lichte-achtergrond);
+  background: var(--secundaire-lichte-tekst-kleur);
   border: 0;
   outline: 0;
   min-height: 40px;
@@ -232,7 +232,7 @@ button {
   text-align: center;
   column-gap: 0.25em;/* Ruimte tussen tekst en eventuele iconen */
   
-  background-color: var(--standaard-button-accent-kleur);/* Witte achtergrondkleur */
+  background-color: var(--secundaire-lichte-tekst-kleur);/* Witte achtergrondkleur */
   color: black;
   border: none;
   
@@ -753,6 +753,8 @@ footer ul {
   padding: 0;
   margin-top: 0;
   margin-bottom: 1.5em;
+      list-style: none;
+        /* Verwijder de opsommingstekens */
 }
 
 /* onderste witte sectie footer */
@@ -792,6 +794,8 @@ footer img {
 /* styling voor de bigga-screen versie van de website */
 /******************************************************/
 @media screen and (min-width: 1000px) {
+
+   
 
     header nav {
         position: relative;/* Zorg ervoor dat de nav relatieve positie heeft */
