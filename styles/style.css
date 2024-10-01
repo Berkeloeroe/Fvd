@@ -22,12 +22,19 @@ button:not(disabled) {
 :root {
   --general-color:#263746;
   --general-background:#fff;
-  --header-gradient:linear-gradient(#f8a, #fbd);
-  --menu-gradient:linear-gradient(#8af, #bdf);
   --menu-border:#46f;
   --button-color:#263746ff;
   --button-background:#263746;
   --title-gradient:linear-gradient(#f46 40%, #f8a 80%);
+
+  --standaard-lichte-achtergrond:#fff;
+  --secundaire-donkere-achtergrond:#263746;
+
+  --standaard-donkere-tekst-kleur:#263746;
+  --secundaire-lichte-tekst-kleur:#fff;
+
+  --standaard-button-kleur: #263746;
+  --standaard-button-accent-kleur: #fff;
 }
 
 
@@ -37,9 +44,9 @@ button:not(disabled) {
 /********************/
 body {
   margin:0;
-  background-color:var(--general-background);
+  background-color:var(--standaard-lichte-achtergrond);
   overflow-x: hidden;
-  color:var(--general-color);
+  color:var(--standaard-donkere-tekst-kleur);
 }
 
 
@@ -51,13 +58,13 @@ body {
 
 /* headings */
 h1 {
-  color: white;
+  color: var(--secundaire-lichte-tekst-kleur);
   font-size: 2.125rem;
   font-family: 'Recoleta', sans-serif;
 }
 
 h2 {
-  color: var(--general-color);
+  color: var(--standaard-donkere-tekst-kleur);
   font-size: 2.125rem;
   font-family: 'Recoleta', sans-serif;
   margin: 0;
@@ -65,7 +72,7 @@ h2 {
 }
 
 h3 {
-  color: var(--general-background);
+  color: var(--secundaire-lichte-tekst-kleur);
   font-size: 1rem;
   font-family: 'Recoleta', sans-serif;
   margin: 0;
@@ -93,16 +100,11 @@ main section {
 /* secties met 3 figures */
 /* chatgpt:"Hoe kan ik een sectie met drie figuren in CSS opmaken waarbij de tekst en afbeelding gecentreerd zijn, en de tekst onder de afbeelding staat?" */
 figure {
-  justify-content: center;
-  /* Horizontaal centreren */
-  align-items: center;
-  /* Verticaal centreren */
-  flex-direction: column;
-  /* Stapelt items verticaal (voor figcaption en img) */
-  height: 100%;
-  /* Als je wilt dat de figuur de volledige hoogte krijgt */
-  text-align: center;
-  /* Zorgt ervoor dat tekst gecentreerd is */
+  justify-content: center;/* Horizontaal centreren */
+  align-items: center;/* Verticaal centreren */
+  flex-direction: column;/* Stapelt items verticaal (voor figcaption en img) */
+  height: 100%;/* Als je wilt dat de figuur de volledige hoogte krijgt */
+  text-align: center;/* Zorgt ervoor dat tekst gecentreerd is */
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -144,7 +146,7 @@ main section:nth-of-type(3) a {
   padding-left: 3em;
   max-width: 100%;
   padding-right: 3em;
-  background-color: var(--button-background);
+  background-color: var(--standaard-button-kleur);
 
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -152,9 +154,9 @@ main section:nth-of-type(3) a {
 
 main section:nth-of-type(3) a:hover {
   cursor: pointer;
-  background-color: var(--general-background);
-  border: 2px solid var(--button-background);
-  color: #263746;
+  background-color: var(--standaard-button-accent-kleur);
+  border: 2px solid var(--standaard-button-kleur);
+  color: var(--standaard-button-kleur);
 }
 
 /* Natuurlijk gefilterd door de rotsen in de Ardennen */
@@ -173,19 +175,19 @@ main section:nth-of-type(5) {
 /* formulier sectie */
 /* chatgpt:"Kun je een CSS-stijl maken voor de zevende sectie van een formulier met een achtergrondafbeelding, afgeronde hoeken en een gekleurde tekst?" */
 main section:nth-of-type(7) {
-  color: var(--general-background);
+  color: var(--secundaire-lichte-tekst-kleur);
   line-height: 1.692307692307692;
   background-image: url(../images/newsletter-mob.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 25px;
-  border-left: 15px solid white;
-  border-right: 15px solid white;
-  border-bottom: 15px solid white;
+  border-left: 15px solid var(--standaard-button-accent-kleur);
+  border-right: 15px solid var(--standaard-button-accent-kleur);
+  border-bottom: 15px solid var(--standaard-button-accent-kleur);
 }
 
 main section:nth-of-type(7) h2 {
-  color: var(--general-background);
+  color: var(--standaard-lichte-achtergrond);
   text-align: center;
 }
 
@@ -204,7 +206,7 @@ main section:nth-of-type(7) p:last-of-type {
 input:first-of-type {
   width: 90%;
   padding: 4px 19px 0;
-  background: #fff;
+  background: var(--standaard-lichte-achtergrond);
   border: 0;
   outline: 0;
   min-height: 40px;
@@ -237,7 +239,7 @@ button {
   text-align: center;
   column-gap: 0.25em;/* Ruimte tussen tekst en eventuele iconen */
   
-  background-color: #ffffff;/* Witte achtergrondkleur */
+  background-color: var(--standaard-button-accent-kleur);/* Witte achtergrondkleur */
   color: black;
   border: none;
   
@@ -246,8 +248,8 @@ button {
 }
 
 button:hover {
-  color: white;
-  background-color: #263746;
+  color: var(--standaard-button-accent-kleur);
+  background-color: var(--standaard-button-kleur);
 }
 
 /* youtube video sectie achtergrond */
@@ -300,7 +302,7 @@ header {
   min-height: 4em;
   height: 88px;
   padding: 0 3%;
-  background-color: white;
+  background-color: var(--standaard-lichte-achtergrond);
   line-height: 1;
 
   display: flex;
@@ -365,52 +367,15 @@ header>a:first-of-type img {
   z-index: 100001;/* Zorgt ervoor dat het logo boven het menu staat */
 }
 
-/* Koop hier knop */
-/* header>a:last-of-type {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 40px;
-
-  height: 40px;
-
-  border-radius: 50%;
-
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-
-  column-gap: 0.25em;
-
-  margin: 0;
-  margin-right: 10px;
-
-  background-color: var(--button-background);
-  color: var(--general-background);
-
-  border: 2px solid #fff;
-
-  text-decoration: none;
-  -webkit-text-decoration: none;
-    z-index: 100008;
-} */
-
-/* Koop hier knop svg*/
-/* header>a:last-of-type svg {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-} */
-
 /* button van de docent */
 header>a:last-of-type {
     width: 2.5em;
     height: 2.35em;
     display: flex;
     align-items: center;
-    background-color: var(--button-background);
-    color: var(--general-background);
-    border: 2px solid var(--general-background);
+    background-color: var(--standaard-button-kleur);
+    color: var(--standaard-button-accent-kleur);
+    border: 2px solid var(--standaard-button-accent-kleur);
     padding-left: 2.1em;
     overflow: hidden;
     border-radius: 1.25em;
@@ -425,10 +390,10 @@ header>a:last-of-type {
 }
 
 header>a:last-of-type:hover {
-  background-color: var(--general-background);
-  color: var(--general-color);
-  border: 2px solid var(--button-background);
-      background-image: url("../images/shopping-cart-outline-svgrepo-com\ \(2\).svg");
+  background-color: var(--standaard-button-accent-kleur);
+  color: var(--standaard-button-kleur);
+  border: 2px solid var(--standaard-button-kleur);
+  background-image: url("../images/shopping-cart-outline-svgrepo-com\ \(2\).svg");
 
 }
 
@@ -462,7 +427,7 @@ header nav button {
   border-radius: .25em;
   font: inherit;
   text-align: center;
-  color: var(--button-color);
+  color: var(--standaard-button-kleur);
   position: relative;
   z-index: 100002;
 }
@@ -473,7 +438,7 @@ header nav button img {
 
 nav.toonMenu button {
   content: url("https://assets.codepen.io/274456/ui-icon-cross.svg");
-  background-color: var(--button-background);
+  background-color: var(--standaard-button-kleur);
 }
 
 /* deze weet ik niet meer wat hier mee was dus staat uit */
@@ -492,7 +457,7 @@ header nav ul {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: start;
-  background: white;
+  background: var(--standaard-lichte-achtergrond);
   position: fixed;
   inset: 0;
   translate: -100%;
@@ -595,10 +560,10 @@ header nav a.active {
   overflow: hidden;
   /* border-radius: 0 0 25px 25px; */
   border-radius: 25px 25px 25px 25px;
-  border-left: 15px solid white;
-  border-right: 15px solid white;
-  border-bottom: 15px solid white;
-  border-top: 15px solid white;
+  border-left: 15px solid var(--standaard-lichte-achtergrond);
+  border-right: 15px solid var(--standaard-lichte-achtergrond);
+  border-bottom: 15px solid var(--standaard-lichte-achtergrond);
+  border-top: 15px solid var(--standaard-lichte-achtergrond);
 }
 
 /* Hero-content stijlen */
@@ -608,7 +573,7 @@ header nav a.active {
   position: relative;
   z-index: 1;
   text-align: center;
-  color: white;
+  color: var(--secundaire-lichte-tekst-kleur);
   top: 50%;
   transform: translateY(-50%);
 }
@@ -627,8 +592,7 @@ header nav a.active {
   order: 2;
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: var(--primary-color);
-  color: white;
+  color: var(--secundaire-lichte-tekst-kleur);
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -637,7 +601,7 @@ header nav a.active {
 }
 
 .hero-content .cta-button:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--standaard-button-accent-kleur));
 }
 
 /* Video-element */
@@ -700,11 +664,11 @@ button#disable-video:focus {
 .hero-content h1,
 .hero-content p {
   text-align: center;
-  color: var(--general-background);
+  color: var(--secundaire-lichte-tekst-kleur);
 }
 
 .hero-content a {
-  color: var(--general-background);
+  color: var(--secundaire-lichte-tekst-kleur);
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
@@ -738,7 +702,7 @@ footer {
   align-items: center;
   text-align: center;
   padding-top: 10%;
-  background-color: var(--general-color);
+  background-color: var(--secundaire-donkere-achtergrond);
 }
 
 /* 2 grote svgs */
@@ -761,9 +725,9 @@ footer > a:first-of-type {
   text-align: center;
   column-gap: 0.25em; /* Ruimte tussen tekst en eventuele iconen */
 
-  background-color: #ffffff; /* Witte achtergrondkleur */
-  color: var(--general-color); /* Kleur van de tekst */
-  border: 2px solid var(--general-color); /* Randkleur aanpassen aan de tekstkleur */
+  background-color: var(--standaard-lichte-achtergrond); /* Witte achtergrondkleur */
+  color: var(--standaard-donkere-tekst-kleur); /* Kleur van de tekst */
+  border: 2px solid var(--standaard-button-kleur); /* Randkleur aanpassen aan de tekstkleur */
   
   text-decoration: none; /* Verwijder onderlijning */
   -webkit-text-decoration: none; /* Verwijder onderlijning in Safari */
@@ -789,7 +753,7 @@ footer a{
   font-family: "Poppins", sans-serif;
   font-size: .6875rem;
   text-decoration: none;
-  color: white;
+  color: var(--secundaire-lichte-tekst-kleur);
 }
 
 footer ul {
@@ -802,7 +766,7 @@ footer ul {
 footer section {
   width: 100%; /* Breedte van 100% van de footer */
   padding: 0;
-  background-color: var(--general-background);
+  background-color: var(--secundaire-donkere-achtergrond);
 }
 
 /* bolletjes weg */
@@ -812,7 +776,7 @@ footer section li {
 
 /* tekst kleur op donkere achtergrond */
 footer section a {
-  color: var(--general-color);
+  color: var(--standaard-lichte-achtergrond);
 } 
 
 /* copyright footer */
@@ -844,7 +808,7 @@ footer img {
     header nav a {
       position: relative;/* Zorg ervoor dat de link relatieve positie heeft */
       padding: 0;/* Voeg wat padding toe aan de link */
-      color: var(--general-color);
+      color: var(--standaard-donkere-tekst-kleur);
       text-decoration: none;
       overflow: hidden;/* Zorg ervoor dat de lijn niet buiten de link komt */
     }
@@ -856,7 +820,7 @@ footer img {
       bottom: 20px;/* Plaats het dichter bij de onderkant van de link (verander deze waarde) */
       height: 2px;/* Dikte van de lijn */
       width: 100%;/* Breedte van de lijn */
-      background-color: var(--general-color);/* Kleur van de lijn */
+      background-color: var(--standaard-lichte-achtergrond);/* Kleur van de lijn */
       transform: translateX(-100%);/* Begin buiten het zicht */
       transition: transform 0.3s ease;/* Maak de overgang soepel */
     }
@@ -957,10 +921,6 @@ footer img {
     /* youtube video sectie */
     main section:nth-of-type(6) figure {
             width: 50%;
-    }
-
-    /* youtube video */
-    iframe {
     }
 
 }
