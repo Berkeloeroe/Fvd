@@ -366,14 +366,14 @@ header>a:last-of-type {
     background-color: var(--button-background);
     color: var(--general-background);
     border: 2px solid var(--general-background);
-    padding-left: 2.5em;
+    padding-left: 2.1em;
     overflow: hidden;
     border-radius: 1.25em;
   
     background-image: url("../images/shopping-cart-outline-svgrepo-com.svg");
-    background-size: 1.5em 1.5em;
+    background-size: 1.25em 1.25em;
     background-repeat: no-repeat;
-    background-position: .5em .5em;
+    background-position: .45em .5em;
 
     font-family: "Poppins", sans-serif;
 }
