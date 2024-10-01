@@ -256,33 +256,22 @@ main section:nth-of-type(6) {
 
 /* chatgpt:op mijn mobiele scherm heb ik nu overflow omdat die video te groot is hoe pas ik hem aan voor klein scherm */
 main section:nth-of-type(6) figure {
-  position: relative;
-  /* Zorgt ervoor dat de container de juiste positie heeft */
-  width: 100%;
-  /* Laat de container de volle breedte van de sectie innemen */
-  padding-top: 56.25%;
-  /* Dit zorgt voor een aspect ratio van 16:9 (56.25% = 9/16 * 100) */
-  overflow: hidden;
-  /* Voorkomt dat de video buiten de container steekt */
+  position: relative;/* Zorgt ervoor dat de container de juiste positie heeft */
+  width: 100%;/* Laat de container de volle breedte van de sectie innemen */
+  padding-top: 56.25%;/* Dit zorgt voor een aspect ratio van 16:9 (56.25% = 9/16 * 100) */
+  overflow: hidden;/* Voorkomt dat de video buiten de container steekt */
   border-radius: 15px;
-    margin: 0 auto;
-      /* Centreert de container horizontaal */
+  margin: 0 auto;/* Centreert de container horizontaal */
 }
 
 /* youtube video */
 iframe {
-  position: absolute;
-  /* Hiermee positioneer je de video binnen de container */
-  top: 0;
-  /* Plaatst de video bovenaan de container */
-  left: 0;
-  /* Plaatst de video links in de container */
-  width: 100%;
-  /* Laat de video de volle breedte van de container innemen */
-  height: 100%;
-  /* Laat de video de volle hoogte van de container innemen */
-  border-radius: 15px;
-  /* Zorgt voor afgeronde hoeken van de video */
+  position: absolute;/* Hiermee positioneer je de video binnen de container */
+  top: 0;/* Plaatst de video bovenaan de container */
+  left: 0;/* Plaatst de video links in de container */
+  width: 100%;/* Laat de video de volle breedte van de container innemen */
+  height: 100%;/* Laat de video de volle hoogte van de container innemen */
+  border-radius: 15px;/* Zorgt voor afgeronde hoeken van de video */
 }
 
 
@@ -305,10 +294,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 10000000000;
-}
-
-header svg {
-  width: 55px;
 }
 
 /* Voor kleine schermen */
@@ -551,7 +536,6 @@ header nav a.active {
   position: relative;
   height: 100vh;/* Volledige hoogte van het venster */
   overflow: hidden;
-  /* border-radius: 0 0 25px 25px; */
   border-radius: 25px 25px 25px 25px;
   border-left: 15px solid var(--standaard-lichte-achtergrond);
   border-right: 15px solid var(--standaard-lichte-achtergrond);
@@ -593,9 +577,9 @@ header nav a.active {
   transition: background-color 0.3s ease;
 }
 
-.hero-content .cta-button:hover {
+/* .hero-content .cta-button:hover {
   background-color: var(--standaard-button-accent-kleur);
-}
+} */
 
 /* Video-element */
 .background-video {
@@ -771,7 +755,7 @@ footer section li {
 
 /* tekst kleur op donkere achtergrond */
 footer section a {
-  color: var(--standaard-lichte-achtergrond);
+  color: var(--secundaire-lichte-tekst-kleur);
 } 
 
 /* copyright footer */
@@ -781,8 +765,8 @@ small {
   text-align: center;
   font-family: "Poppins", sans-serif;
   gap: .9em;
-  padding-top: 9%;
-  padding-bottom: 9%;
+  /* padding-top: 9%;
+  padding-bottom: 9%; */
 }
 
 footer img {
@@ -794,8 +778,6 @@ footer img {
 /* styling voor de bigga-screen versie van de website */
 /******************************************************/
 @media screen and (min-width: 1000px) {
-
-   
 
     header nav {
         position: relative;/* Zorg ervoor dat de nav relatieve positie heeft */
@@ -817,7 +799,7 @@ footer img {
       bottom: 20px;/* Plaats het dichter bij de onderkant van de link (verander deze waarde) */
       height: 2px;/* Dikte van de lijn */
       width: 100%;/* Breedte van de lijn */
-      background-color: var(--standaard-lichte-achtergrond);/* Kleur van de lijn */
+      background-color: var(--standaard-donkere-tekst-kleur);/* Kleur van de lijn */
       transform: translateX(-100%);/* Begin buiten het zicht */
       transition: transform 0.3s ease;/* Maak de overgang soepel */
     }
