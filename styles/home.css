@@ -62,7 +62,7 @@ p {
 } 
 
 /* chatgpt:kan je met alleen css een semantische hero sectie imagae slider maken? dat bij elke nieuwe image ook nieuwe tekst komt? */
-section {
+section:first-of-type {
 	position: relative;
 	width: 100%;
 	height: 100vh;
@@ -70,7 +70,7 @@ section {
 	border-radius: 25px 25px 25px 25px;
 }
 
-figure {
+section:first-of-type figure {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -82,21 +82,21 @@ figure {
 	animation: slideAnimation 12s infinite;
 }
 
-img {
+section:first-of-type img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 
 /* Positioneer de tekst op de afbeelding */
-figcaption {
+section:first-of-type figcaption {
 	position: absolute;
 	color: var(--bijna-alle-tekst);
 	text-align: center;
 }
 
 /* CTA-knop styling */
-a.cta {
+section:first-of-type a.cta {
 	display: inline-block;
 	margin-top: 20px;
 	padding: 1em 2.5em;
@@ -109,25 +109,25 @@ a.cta {
 	-webkit-text-decoration: none;
 }
 
-a.cta:hover {
+section:first-of-type a.cta:hover {
 	background-color: var(--donkere-knopjes);
 	color: var(--bijna-alle-tekst);
 }
 
 /* Eerste slide */
-figure:nth-of-type(1) {
+section:first-of-type figure:nth-of-type(1) {
 	animation-delay: 0s;
 	opacity: 1;
 }
 
 /* Tweede slide */
-figure:nth-of-type(2) {
+section:first-of-type figure:nth-of-type(2) {
 	animation-delay: 4s;
 	opacity: 1;
 }
 
 /* Derde slide */
-figure:nth-of-type(3) {
+section:first-of-type figure:nth-of-type(3) {
 	animation-delay: 8s;
 	opacity: 1;
 }
@@ -158,4 +158,50 @@ figure:nth-of-type(3) {
 		transform: translateX(-100%);
 		opacity: 0;
 	}
+}
+
+/* chatgpt:ik heb een sectie nodig met een achtegrond afbeelding. daarin staat een image die ongeveer de helft ineemt van de sectie en daarnaast de overige ruimte staat een h3 met een a link. Dit moet semantisch zijn zonder classes en ids */
+section:nth-of-type(2) {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 20vh;
+	margin-top: 5%;
+	border-radius: 25px 25px 25px 25px;
+	background-image: url('../images/newsletter-mob.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+section:nth-of-type(2) figure {
+	margin: 0;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section:nth-of-type(2) figure img {
+	max-width: 50%;
+	/* De afbeelding neemt ongeveer de helft van de sectie */
+	height: auto;
+}
+
+section:nth-of-type(2) div {
+	flex: 1;
+	text-align: center;
+}
+
+section:nth-of-type(2) h3,
+section:nth-of-type(2) a {
+	color: white;
+}
+
+section:nth-of-type(2) a {
+	text-decoration: none;
+	color: #00f;
+}
+
+section:nth-of-type(2) a:hover {
+	text-decoration: underline;
 }
