@@ -86,6 +86,7 @@ section:first-of-type img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+		filter: brightness(0.75);
 }
 
 /* Positioneer de tekst op de afbeelding */
@@ -245,7 +246,6 @@ section:nth-of-type(5) {
 	width: 100%;
 	height: 100vh;
 	margin-top: 5%;
-	/* Of een andere hoogte naar keuze */
 	overflow: hidden;
 	border-radius: 25px;
 }
@@ -262,6 +262,7 @@ section:nth-of-type(5) img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	filter: brightness(0.75);
 }
 
 section:nth-of-type(5) figcaption {
@@ -270,7 +271,7 @@ section:nth-of-type(5) figcaption {
 	text-align: center;
 }
 
-section:nth-of-type(5) a.cta {
+section:nth-of-type(5) a {
 	display: inline-block;
 	margin-top: 20px;
 	padding: 1em 2.5em;
@@ -282,7 +283,7 @@ section:nth-of-type(5) a.cta {
 	transition: background-color 0.3s ease;
 }
 
-section:nth-of-type(5) a.cta:hover {
+section:nth-of-type(5) a:hover {
 	background-color: var(--donkere-knopjes);
 	color: var(--bijna-alle-tekst);
 }
