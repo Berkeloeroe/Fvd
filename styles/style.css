@@ -376,6 +376,7 @@ header>a:last-of-type {
     background-position: .45em .5em;
 
     font-family: "Poppins", sans-serif;
+        z-index: 100008;
 }
 
 header>a:last-of-type:hover {
