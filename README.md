@@ -215,13 +215,15 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Dit ging goed/Heb ik geleerd:
 
-Korte omschrijving met plaatjes
+Minder divs en classes gebruiken
+Darkmode
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 ### Dit was lastig/Is niet gelukt:
 
-Korte omschrijving met plaatjes
+-De footer responsive maken voor desktop ik moet hem eigenlijk opnieuw doen
+-De lange sectie van een ondergrondse reis
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>

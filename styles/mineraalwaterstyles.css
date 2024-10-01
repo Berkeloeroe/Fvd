@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+
+/* chatgpt:"Kun je een voorbeeld geven van een @font-face CSS-regel voor het inladen van een lettertype genaamd 'Recoleta' vanuit een woff2-bestand?" */
+@font-face {
+	font-family: 'Recoleta';
+	src: url('../fonts/Recoleta-Bold.woff2') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+h1, h2, h3 {
+	font-family: 'Recoleta', sans-serif;
+	font-size: 5em;
+}
+
+p {
+	font-family: "Poppins", sans-serif;
+}
