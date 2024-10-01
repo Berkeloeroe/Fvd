@@ -165,7 +165,7 @@ section:nth-of-type(2) {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 20vh;
+	/* height: 50%; */
 	margin-top: 5%;
 	border-radius: 25px 25px 25px 25px;
 	background-image: url('../images/home-fotos/bg-1.jpg');
