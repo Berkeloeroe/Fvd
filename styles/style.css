@@ -117,6 +117,7 @@ main section:nth-of-type(2) {
 /* sectie met fles spa  */
 main section:nth-of-type(3) {
   text-align: left;
+  padding-bottom: 2%;
 }
 
 /* spa water foto */
@@ -342,7 +343,7 @@ header>a:first-of-type {
 
 header>a:first-of-type img {
   height: 40px;
-  z-index: 100001;/* Zorgt ervoor dat het logo boven het menu staat */
+  z-index: 100001;
 }
 
 /* button van de docent */
@@ -364,7 +365,7 @@ header>a:last-of-type {
     background-position: .45em .5em;
 
     font-family: "Poppins", sans-serif;
-        z-index: 100008;
+    z-index: 100008;
 }
 
 header>a:last-of-type:hover {
@@ -577,10 +578,6 @@ header nav a.active {
   transition: background-color 0.3s ease;
 }
 
-/* .hero-content .cta-button:hover {
-  background-color: var(--standaard-button-accent-kleur);
-} */
-
 /* Video-element */
 .background-video {
   position: absolute;
@@ -737,8 +734,7 @@ footer ul {
   padding: 0;
   margin-top: 0;
   margin-bottom: 1.5em;
-      list-style: none;
-        /* Verwijder de opsommingstekens */
+  list-style: none;
 }
 
 /* onderste witte sectie footer */
@@ -765,9 +761,7 @@ small {
   text-align: center;
   font-family: "Poppins", sans-serif;
   gap: .9em;
-  /* padding-top: 9%;
-  padding-bottom: 9%; */
-    padding-bottom: 2%;
+  padding-bottom: 2%;
 }
 
 footer img {
