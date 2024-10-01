@@ -168,7 +168,7 @@ section:nth-of-type(2) {
 	height: 20vh;
 	margin-top: 5%;
 	border-radius: 25px 25px 25px 25px;
-	background-image: url('../images/newsletter-mob.jpg');
+	background-image: url('../images/home-fotos/bg-1.jpg');
 	background-size: cover;
 	background-position: center;
 }
@@ -182,7 +182,7 @@ section:nth-of-type(2) figure {
 }
 
 section:nth-of-type(2) figure img {
-	max-width: 50%;
+	/* max-width: 50%; */
 	/* De afbeelding neemt ongeveer de helft van de sectie */
 	height: auto;
 }
@@ -194,7 +194,8 @@ section:nth-of-type(2) div {
 
 section:nth-of-type(2) h3,
 section:nth-of-type(2) a {
-	color: white;
+	color: var(--bijna-alle-tekst);
+	font-size: 3rem;
 }
 
 section:nth-of-type(2) a {
