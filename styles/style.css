@@ -90,6 +90,30 @@ main section {
   padding: 10% 3% 0 3%;
 }
 
+/* secties met 3 figures */
+/* chatgpt:"Hoe kan ik een sectie met drie figuren in CSS opmaken waarbij de tekst en afbeelding gecentreerd zijn, en de tekst onder de afbeelding staat?" */
+figure {
+  justify-content: center;
+  /* Horizontaal centreren */
+  align-items: center;
+  /* Verticaal centreren */
+  flex-direction: column;
+  /* Stapelt items verticaal (voor figcaption en img) */
+  height: 100%;
+  /* Als je wilt dat de figuur de volledige hoogte krijgt */
+  text-align: center;
+  /* Zorgt ervoor dat tekst gecentreerd is */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+figcaption {
+  max-width: 185px;
+  font-size: .875em;
+  line-height: 2.142857142857143;
+}
+
 /* Geef je lichaam de puurheid die het verdient */
 main section:nth-of-type(2) {
   text-align: left;
@@ -151,6 +175,11 @@ main section:nth-of-type(6) {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+iframe {
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 
@@ -234,24 +263,7 @@ button:hover {
   background-color: #263746;
 }
 
-/* secties met 3 figures */
-/* chatgpt:"Hoe kan ik een sectie met drie figuren in CSS opmaken waarbij de tekst en afbeelding gecentreerd zijn, en de tekst onder de afbeelding staat?" */
-figure {
-  justify-content: center; /* Horizontaal centreren */
-  align-items: center;     /* Verticaal centreren */
-  flex-direction: column;  /* Stapelt items verticaal (voor figcaption en img) */
-  height: 100%;            /* Als je wilt dat de figuur de volledige hoogte krijgt */
-  text-align: center;      /* Zorgt ervoor dat tekst gecentreerd is */
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
 
-figcaption {
-  max-width: 185px;
-  font-size: .875em;
-  line-height: 2.142857142857143;
-}
 
 
 
