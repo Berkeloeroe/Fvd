@@ -175,6 +175,7 @@ main section:nth-of-type(6) {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-bottom: 5%;
 }
 
 iframe {
