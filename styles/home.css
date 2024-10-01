@@ -242,6 +242,8 @@ section:nth-of-type(4) a:hover {
 	background-color: var(--lichtere-knopjes);
 }
 
+/* chatgptik wil een nieuwe sectie maken met de styling van die hero die ik je net heb gestuurd. alleen zonder de animaties enzo dus alleen een sectie met achtergrond foto,
+h2 en een a in dezelfde styling */
 /* Stijlen voor de 5e, 7e, 8e en 9e sectie */
 section:nth-of-type(5),
 section:nth-of-type(7),
