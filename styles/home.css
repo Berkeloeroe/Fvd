@@ -373,6 +373,102 @@ section:nth-of-type(6) a:first-of-type {
 	/* Ruimte onder de SVG */
 }
 
+/* formulier sectie */
+/* chatgpt:"Kun je een CSS-stijl maken voor de zevende sectie van een formulier met een achtergrondafbeelding, afgeronde hoeken en een gekleurde tekst?" */
+main section:nth-of-type(10) {
+	color: var(--bijna-alle-tekst);
+	line-height: 1.692307692307692;
+	background-image: url(../images/newsletter-mob.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 25px;
+	border-left: 15px solid var(--standaard-button-accent-kleur);
+	border-right: 15px solid var(--standaard-button-accent-kleur);
+	border-bottom: 15px solid var(--standaard-button-accent-kleur);
+
+	display: flex;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		padding: 10% 3% 0 3%;
+}
+
+main section:nth-of-type(10) h2 {
+	/* color: var(--bijna-alle-tekst); */
+	text-align: center;
+}
+
+main section:nth-of-type(10) p {
+	text-align: center;
+	line-height: 1.692307692307692;
+}
+
+/* haal meer uit het leven */
+main section:nth-of-type(10) p:last-of-type {
+	font-size: 1.125rem;
+	font-weight: bold;
+}
+
+/* vul email in inputveld */
+input:first-of-type {
+	width: 90%;
+	padding: 4px 19px 0;
+	background: var(--bijna-alle-tekst);
+	border: 0;
+	outline: 0;
+	min-height: 40px;
+	font-family: PoppinsMedium, arial, sans-serif;
+	font-size: 15px;
+	font-size: .9375rem;
+	line-height: 1.666666666666667;
+}
+
+/* label tekst */
+label {
+	font-family: PoppinsMedium, arial, sans-serif;
+	font-weight: bold;
+	text-align: left;
+	max-width: 285px;
+	color: var(--bijna-alle-tekst);
+}
+
+/* ik schrijf me in button */
+/* chatgpt:"Kun je me een CSS-stijl geven voor een inschrijfknop die netjes gecentreerd is, een ronde vorm heeft en gebruikmaakt van het lettertype 'Poppins'?" */
+button {
+	display: inline-flex;
+	justify-content: center;
+	/* Horizontaal centreren */
+	align-items: center;
+	/* Verticaal centreren */
+	width: auto;
+	/* Automatische breedte zodat de knop niet te beperkt is */
+	padding: 0.5em 1.5em;
+	/* Padding om ruimte binnen de knop toe te voegen */
+	margin-top: 3em;
+	margin-bottom: 3em;
+	border-radius: 25px;
+	/* Ronde hoeken */
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+	column-gap: 0.25em;
+	/* Ruimte tussen tekst en eventuele iconen */
+
+	background-color: var(--secundaire-lichte-tekst-kleur);
+	/* Witte achtergrondkleur */
+	color: black;
+	border: none;
+
+	text-decoration: none;
+	/* Verwijder onderlijning */
+	-webkit-text-decoration: none;
+	/* Verwijder onderlijning in Safari */
+}
+
+button:hover {
+	color: var(--standaard-button-accent-kleur);
+	background-color: var(--standaard-button-kleur);
+}
+
 /*************/
 /* DE HEADER */
 /*************/
