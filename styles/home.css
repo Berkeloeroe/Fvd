@@ -295,7 +295,7 @@ section:nth-of-type(9) a {
 	display: inline-block;
 	margin-top: 20px;
 	padding: 1em 2.5em;
-	font-size: 2rem;
+	/* font-size: 2rem; */
 	font-family: "Poppins", sans-serif;
 	color: var(--donkerblauw);
 	background-color: var(--lichtere-knopjes);
@@ -335,7 +335,7 @@ section:nth-of-type(6) a:last-of-type {
 	margin-top: 20px;
 	padding: 1em 2.5em;
 	font-family: "Poppins", sans-serif;
-	font-size: 1.5rem;
+	/* font-size: 1.5rem; */
 	color: var(--bijna-alle-tekst);
 	background-color: var(--donkerblauw);
 	text-decoration: none;
