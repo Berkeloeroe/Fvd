@@ -36,6 +36,7 @@
 	--menulinks:#263746;
 	--footerbg:#263746;
 	--minifootertekst:#263746;
+	--kopierijtfoeter: #fff;
 }
 
 
@@ -802,7 +803,7 @@ footer section {
 	width: 100%;
 	/* Breedte van 100% van de footer */
 	padding: 0;
-	background-color: var(--html-background);
+	background-color: var(--kopierijtfoeter);
 }
 
 /* bolletjes weg */
@@ -851,7 +852,9 @@ footer img {
 		--donkerblauw:#18232c;
 		--menulinks:#fff;
 		--button-border:#fff;
-			--minifootertekst: #fff;
+		--minifootertekst: #fff;
+		--footerbg: #0c1318;
+		--kopierijtfoeter: #040708;
 	}
 }
 
