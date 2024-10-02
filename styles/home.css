@@ -114,7 +114,7 @@ section:first-of-type a {
 	-webkit-text-decoration: none;
 }
 
-section:first-of-type a {
+main section:first-of-type a {
 	background-color: var(--donkere-knopjes);
 	color: var(--bijna-alle-tekst);
 }
