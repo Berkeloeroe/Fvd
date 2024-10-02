@@ -36,10 +36,6 @@ button:not(disabled) {
 /* ALGEMENE STIJLEN */
 /********************/
 
-body main {
-  padding: 4%;
-  background-color: var(--html-background);
-}
 body {
   margin:0;
   background-color:var(--standaard-lichte-achtergrond);
@@ -778,6 +774,8 @@ footer img {
 /* styling voor de bigga-screen versie van de website */
 /******************************************************/
 @media screen and (min-width: 1000px) {
+
+
 
     header nav {
         position: relative;/* Zorg ervoor dat de nav relatieve positie heeft */
