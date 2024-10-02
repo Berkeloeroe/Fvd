@@ -34,6 +34,7 @@
 	--button-border:#263746;
 	--donkerblauw:#263746;
 	--menulinks:#263746;
+	--footerbg:#263746;
 }
 
 
@@ -45,7 +46,7 @@
 
 /* typografie */
 
-body {
+body main {
 	padding: 4%;
 	background-color: var(--html-background);
 }
@@ -64,7 +65,7 @@ p {
 } 
 
 /* chatgpt:kan je met alleen css een semantische hero sectie imagae slider maken? dat bij elke nieuwe image ook nieuwe tekst komt? */
-section:first-of-type {
+main section:first-of-type {
 	position: relative;
 	width: 100%;
 	height: 100vh;
@@ -164,7 +165,7 @@ section:first-of-type figure:nth-of-type(3) {
 }
 
 /* chatgpt:ik heb een sectie nodig met een achtegrond afbeelding. daarin staat een image die ongeveer de helft ineemt van de sectie en daarnaast de overige ruimte staat een h3 met een a link. Dit moet semantisch zijn zonder classes en ids */
-section:nth-of-type(2),
+main section:nth-of-type(2),
 section:nth-of-type(3),
 section:nth-of-type(4) {
 	display: flex;
@@ -210,17 +211,17 @@ section:nth-of-type(4) div {
 	text-align: center;
 }
 
-section:nth-of-type(2) h3,
-section:nth-of-type(2) a,
-section:nth-of-type(3) h3,
-section:nth-of-type(3) a,
-section:nth-of-type(4) h3,
-section:nth-of-type(4) a {
+main section:nth-of-type(2) h3,
+main section:nth-of-type(2) a,
+main section:nth-of-type(3) h3,
+main section:nth-of-type(3) a,
+main section:nth-of-type(4) h3,
+main section:nth-of-type(4) a {
 	color: var(--bijna-alle-tekst);
 	font-size: 3rem;
 }
 
-section:nth-of-type(2) a,
+main section:nth-of-type(2) a,
 section:nth-of-type(3) a,
 section:nth-of-type(4) a {
 	display: inline-block;
@@ -381,6 +382,7 @@ main section:nth-of-type(10) {
 	background-image: url(../images/newsletter-mob.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	margin-top: 2%;
 	border-radius: 25px;
 	border-left: 15px solid var(--standaard-button-accent-kleur);
 	border-right: 15px solid var(--standaard-button-accent-kleur);
@@ -453,7 +455,7 @@ button {
 	column-gap: 0.25em;
 	/* Ruimte tussen tekst en eventuele iconen */
 
-	background-color: var(--secundaire-lichte-tekst-kleur);
+	background-color: var(--bijna-alle-tekst);
 	/* Witte achtergrondkleur */
 	color: black;
 	border: none;
@@ -465,8 +467,8 @@ button {
 }
 
 button:hover {
-	color: var(--standaard-button-accent-kleur);
-	background-color: var(--standaard-button-kleur);
+	color: var(--bijna-alle-tekst);
+	background-color: var(--button-border);
 }
 
 /*************/
@@ -711,6 +713,125 @@ header nav a.active {
 }
 
 /****************************************************************/
+/* Footer */
+/****************************************************************/
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-top: 10%;
+	background-color: var(--footerbg);
+}
+
+footer h3 {
+	color: var(--bijna-alle-tekst);
+	font-size: 1rem;
+}
+
+/* 2 grote svgs */
+footer svg {
+	width: 125px;
+	padding-bottom: 1em;
+}
+
+/* klanten service button */
+footer>a:first-of-type {
+	display: inline-flex;
+	justify-content: center;
+	/* Horizontaal centreren */
+	align-items: center;
+	/* Verticaal centreren */
+	width: auto;
+	/* Automatische breedte zodat de knop niet te beperkt is */
+	padding: 0.5em 1.5em;
+	/* Padding om ruimte binnen de knop toe te voegen */
+	margin-top: 3em;
+	margin-bottom: 3em;
+	border-radius: 25px;
+	/* Ronde hoeken */
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+	column-gap: 0.25em;
+	/* Ruimte tussen tekst en eventuele iconen */
+
+	background-color: var(--lichtere-knopjes);
+	/* Witte achtergrondkleur */
+	color: var(--donkerblauw);
+	/* Kleur van de tekst */
+	border: 2px solid var(--bijna-alle-tekst);
+	/* Randkleur aanpassen aan de tekstkleur */
+
+	text-decoration: none;
+	/* Verwijder onderlijning */
+	-webkit-text-decoration: none;
+	/* Verwijder onderlijning in Safari */
+
+}
+
+/* social media links */
+footer nav svg {
+	width: 50px;
+}
+
+/* social medias naast elkaar */
+footer nav:first-of-type ul {
+	display: flex;
+}
+
+footer nav {
+	gap: 1em;
+}
+
+/* nav a links */
+footer a {
+	font-family: "Poppins", sans-serif;
+	font-size: .6875rem;
+	text-decoration: none;
+	color: var(--bijna-alle-tekst);
+}
+
+footer ul {
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 1.5em;
+	list-style: none;
+}
+
+/* onderste witte sectie footer */
+footer section {
+	width: 100%;
+	/* Breedte van 100% van de footer */
+	padding: 0;
+	background-color: var(--html-background);
+}
+
+/* bolletjes weg */
+footer section li {
+	list-style: none;
+}
+
+/* tekst kleur op donkere achtergrond */
+footer section a {
+	color: var(--secundaire-lichte-tekst-kleur);
+}
+
+/* copyright footer */
+small {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	gap: .9em;
+	padding-bottom: 2%;
+}
+
+footer img {
+	width: 70px;
+}
+
+/****************************************************************/
 /* styling voor de header als de browser minimaal 57em breed is */
 /****************************************************************/
 @media (min-width: 54em) {
@@ -723,7 +844,7 @@ header nav a.active {
 
 
 /* Stijlen voor dark mode */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	:root {
 		--bijna-alle-tekst: #fff;
 		--html-background:#18232c;
@@ -733,4 +854,4 @@ header nav a.active {
 		--menulinks:#fff;
 		--button-border:#fff;
 	}
-}
+} */
