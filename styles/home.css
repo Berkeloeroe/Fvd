@@ -549,8 +549,8 @@ header>a:last-of-type {
 	height: 2.35em;
 	display: flex;
 	align-items: center;
-	background-color: var(--bijna-alle-tekst);
-	color: var(--donkerblauw);
+	background-color: var(--menulinks);
+	color: var(--html-background);
 	border: 2px solid var(--button-border);
 	padding-left: 2.1em;
 	overflow: hidden;
