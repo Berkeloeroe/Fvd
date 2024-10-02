@@ -113,7 +113,7 @@ section:first-of-type a {
 	-webkit-text-decoration: none;
 }
 
-main section:first-of-type a {
+main section:first-of-type a:hover {
 	background-color: var(--donkere-knopjes);
 	color: var(--bijna-alle-tekst);
 }
@@ -881,11 +881,32 @@ a:active {
 	}
 
 	h1, h2 {
-		max-width: 10em;
+		font-size: 4.6875rem;	
+	}
+
+	h3 {
+		font-size: 3rem;
+	}
+
+		
+
+	main section:first-of-type h1,
+	main section:first-of-type h2 {
+		max-width: 10em;				
 	}
 
 	section:first-of-type a.cta {
 		font-size: .9rem;
+	}
+
+		main section:nth-of-type(2) h3,
+		main section:nth-of-type(3) h3,
+		main section:nth-of-type(4) h3 {
+			font-size: 3rem;
+		}
+
+	section:nth-of-type(6) figure img {
+		width: 50%;
 	}
 
 
