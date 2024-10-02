@@ -31,6 +31,7 @@
 	--html-background:#fff;
 	--donkere-knopjes:#263746;
 	--lichtere-knopjes:#fff;
+	--button-border:#263746;
 	--donkerblauw:#263746;
 	--menulinks:#263746;
 }
@@ -452,7 +453,7 @@ header>a:last-of-type {
 	align-items: center;
 	background-color: var(--bijna-alle-tekst);
 	color: var(--donkerblauw);
-	border: 2px solid var(--bijna-alle-tekst);
+	border: 2px solid var(--button-border);
 	padding-left: 2.1em;
 	overflow: hidden;
 	border-radius: 1.25em;
@@ -634,5 +635,6 @@ header nav a.active {
 		--lichtere-knopjes: #fff;
 		--donkerblauw:#18232c;
 		--menulinks:#fff;
+		--button-border:#fff;
 	}
 }
