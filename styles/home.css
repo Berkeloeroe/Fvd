@@ -27,8 +27,6 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--sommige-headings:#263746;
 	--bijna-alle-tekst:#fff;
 	--html-background:#fff;
 	--donkere-knopjes:#263746;
@@ -46,13 +44,12 @@
 /* typografie */
 
 body {
-	padding: 5%;
+	padding: 4%;
 }
 
  h1, h2, h3 {
 	font-family: 'Recoleta', sans-serif;
-	/* font-size: 5rem; */
-		font-size: 2.125rem;
+	font-size: 4rem;
 }
 
 p {
@@ -621,5 +618,20 @@ header nav a.active {
 	header>a:last-of-type,
 	nav a {
 		flex-direction: row;
+	}
+}
+
+
+/* Stijlen voor dark mode */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--standaard-lichte-achtergrond: #263746;
+		--secundaire-donkere-achtergrond: #11181f;
+
+		--standaard-donkere-tekst-kleur: #fff;
+		--secundaire-lichte-tekst-kleur: #fff;
+
+		--standaard-button-kleur: #fff;
+		--standaard-button-accent-kleur: #263746;
 	}
 }
