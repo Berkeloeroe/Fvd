@@ -32,6 +32,7 @@
 	--donkere-knopjes:#263746;
 	--lichtere-knopjes:#fff;
 	--donkerblauw:#263746;
+	--menulinks:#263746;
 }
 
 
@@ -45,6 +46,7 @@
 
 body {
 	padding: 4%;
+	background-color: var(--html-background);
 }
 
  h1, h2, h3 {
@@ -331,6 +333,7 @@ section:nth-of-type(6) a:last-of-type {
 	display: inline-block;
 	margin-top: 20px;
 	padding: 1em 2.5em;
+	font-family: "Poppins", sans-serif;
 	font-size: 1.5rem;
 	color: var(--bijna-alle-tekst);
 	background-color: var(--donkerblauw);
@@ -416,7 +419,7 @@ header {
 
 header a {
 	/* padding: .5em 0; */
-	color: var(--donkerblauw);
+	color: var(--menulinks);
 	text-decoration: none;
 }
 
@@ -447,9 +450,9 @@ header>a:last-of-type {
 	height: 2.35em;
 	display: flex;
 	align-items: center;
-	background-color: var(--donkere-knopjes);
-	color: var(--bijna-alle-tekst);
-	border: 2px solid var(--html-background);
+	background-color: var(--bijna-alle-tekst);
+	color: var(--donkerblauw);
+	border: 2px solid var(--bijna-alle-tekst);
 	padding-left: 2.1em;
 	overflow: hidden;
 	border-radius: 1.25em;
@@ -625,13 +628,11 @@ header nav a.active {
 /* Stijlen voor dark mode */
 @media (prefers-color-scheme: dark) {
 	:root {
-		--standaard-lichte-achtergrond: #263746;
-		--secundaire-donkere-achtergrond: #11181f;
-
-		--standaard-donkere-tekst-kleur: #fff;
-		--secundaire-lichte-tekst-kleur: #fff;
-
-		--standaard-button-kleur: #fff;
-		--standaard-button-accent-kleur: #263746;
+		--bijna-alle-tekst: #fff;
+		--html-background:#18232c;
+		--donkere-knopjes: #18232c;
+		--lichtere-knopjes: #fff;
+		--donkerblauw:#18232c;
+		--menulinks:#fff;
 	}
 }
