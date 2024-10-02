@@ -220,6 +220,7 @@ Minder divs en classes gebruiken
 Darkmode
 Screenreader gebruiken
 Css selectors
+Focus stijlen
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
