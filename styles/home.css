@@ -55,7 +55,7 @@ body main {
 
  h1, h2, h3 {
 	font-family: 'Recoleta', sans-serif;
-	font-size: 4rem;
+	font-size: 3rem;
 }
 
 p {
@@ -102,11 +102,11 @@ section:first-of-type figcaption {
 }
 
 /* CTA-knop styling */
-section:first-of-type a.cta {
+section:first-of-type a {
 	display: inline-block;
 	margin-top: 20px;
 	padding: 1em 2.5em;
-	font-size: 2rem;
+	/* font-size: 2rem; */
 	color: var(--donkerblauw);
 	background-color: var(--lichtere-knopjes);
 	text-decoration: none;
@@ -115,7 +115,7 @@ section:first-of-type a.cta {
 	-webkit-text-decoration: none;
 }
 
-section:first-of-type a.cta:hover {
+section:first-of-type a {
 	background-color: var(--donkere-knopjes);
 	color: var(--bijna-alle-tekst);
 }
@@ -220,7 +220,7 @@ main section:nth-of-type(3) a,
 main section:nth-of-type(4) h3,
 main section:nth-of-type(4) a {
 	color: var(--bijna-alle-tekst);
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 main section:nth-of-type(2) a,
@@ -881,5 +881,17 @@ a:active {
 
 
 @media screen and (min-width: 1000px) {
-	
+	body main {
+		padding: 0 1%;		
+	}
+
+	h1, h2 {
+		max-width: 10em;
+	}
+
+	section:first-of-type a.cta {
+		font-size: .9rem;
+	}
+
+
 }
