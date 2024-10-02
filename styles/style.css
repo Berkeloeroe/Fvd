@@ -35,6 +35,11 @@ button:not(disabled) {
 /********************/
 /* ALGEMENE STIJLEN */
 /********************/
+
+body main {
+  padding: 4%;
+  background-color: var(--html-background);
+}
 body {
   margin:0;
   background-color:var(--standaard-lichte-achtergrond);
@@ -912,3 +917,24 @@ footer img {
     --standaard-button-accent-kleur: #263746;
     }
 }
+
+/* chatgpt:in css hoe kan ik snel styling geven op focus en andere toegankelijke dingen */
+/* a:focus {
+  outline: 2px dashed red;
+  outline-offset: 4px;
+} */
+
+a:focus-visible {
+  outline: 2px solid hotpink;
+  /* Fel oranje voor focus zichtbaar voor toetsenbordgebruikers */
+  outline-offset: 4px;
+}
+
+a:active {
+  color: #003366;
+  /* Nog donkerder blauw tijdens actief klikken */
+}
+
+/* a:visited {
+  color: #6c757d;
+} */

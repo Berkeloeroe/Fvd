@@ -45,7 +45,7 @@ Home pagina
 
 Tips & Inspiratie pagina
 
-<img src="readme-images/inspiratie.png" width="375px" alt="tips & inspiratie pagina">
+<img src="readme-images/insipiisisisi.png.png" width="375px" alt="tips & inspiratie pagina">
 
 </details>
 
@@ -58,7 +58,7 @@ Tips & Inspiratie pagina
 
 Lijst met je bevindingen die in de test naar voren kwamen:
 
--De website van Spa is goed toegankelijk. Bijna alles heb ik kunnen afvinken met de WCAG checklist.
+-De website van Spa is oke toegankelijk. Veel heb ik kunnen afvinken met de WCAG checklist.
 -De overige dingen die niet goed waren ga ik zelf verbeteren.
 
 </details>
@@ -129,6 +129,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 -Met behulp van de header opdracht heb ik de header na kunnen maken grotendeels
+<img src="readme-images/hambyurger.png.png" width="375px" alt="breakdown van een dynamisch deel">
 
 -Fontface lukte niet om mijn font er op te krijgen
 
@@ -136,11 +137,11 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 
 samen met je groepje opstellen
 
-| Randi       | Joep               | lois         | student 4        |
+| Randi       | Joep               | lois         | Nienke           |
 | ----------- | ------------------ | ------------ | ---------------- |
 |             | en dit             | en ik dit    | en dan ik dat    |
 |             | dit als er tijd is | nog een punt | dit wil ik zeker |
-| Font family | gradient op tekst  |
+| Font family | gradient op tekst  | font family  |
 
 ### Verslag van meeting
 
@@ -163,7 +164,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
--Op mijn website kan je goed naar alle headings navigeren wat niet kan bij de offical spa site
+-Op mijn website kan je goed naar alle headings navigeren wat niet kan bij de offical spa website
 
 </details>
 
@@ -185,7 +186,7 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 
 samen met je groepje opstellen
 
-| Randi          | student 2          | student 3    | student 4        |
+| Randi          | Joep               | Nienke       | Lois             |
 | -------------- | ------------------ | ------------ | ---------------- |
 | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
@@ -211,12 +212,14 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Je uitkomst - karakteristiek screenshots:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/mooi.png.jpg" width="375px" alt="uitomst opdracht 1">
 
 ### Dit ging goed/Heb ik geleerd:
 
 Minder divs en classes gebruiken
 Darkmode
+Screenreader gebruiken
+Css selectors
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 

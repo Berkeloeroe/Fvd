@@ -44,12 +44,14 @@
 /* JOUW STYLING */
 /****************/
 
-/* typografie */
-
+/* Eigenlijk is niks door mij geschreven alleen  aangepast vanaf de opdrachten van de les en chatgpt */
 body main {
 	padding: 4%;
 	background-color: var(--html-background);
 }
+
+
+/* typografie */
 
  h1, h2, h3 {
 	font-family: 'Recoleta', sans-serif;
@@ -844,7 +846,7 @@ footer img {
 
 
 /* Stijlen voor dark mode */
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 	:root {
 		--bijna-alle-tekst: #fff;
 		--html-background:#18232c;
@@ -854,4 +856,25 @@ footer img {
 		--menulinks:#fff;
 		--button-border:#fff;
 	}
+}
+
+/* chatgpt:in css hoe kan ik snel styling geven op focus en andere toegankelijke dingen */
+/* a:focus {
+  outline: 2px dashed red;
+  outline-offset: 4px;
+} */
+
+a:focus-visible {
+	outline: 2px solid hotpink;
+	/* Fel oranje voor focus zichtbaar voor toetsenbordgebruikers */
+	outline-offset: 4px;
+}
+
+a:active {
+	color: #003366;
+	/* Nog donkerder blauw tijdens actief klikken */
+}
+
+/* a:visited {
+  color: #6c757d;
 } */
